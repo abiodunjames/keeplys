@@ -2,8 +2,8 @@
 layout: null
 permalink: /robots.txt
 ---
-# DigitalKeep - robots.txt
-# https://digitalkeep.app
+# Keeplys - robots.txt
+# https://keeplys.app
 
 # Allow all crawlers
 User-agent: *

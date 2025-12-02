@@ -14,7 +14,7 @@ nav:
 hero:
   tagline: "Tus Documentos. Digitalizados. Organizados. Seguros."
   headline: "Escanea, Almacena y Comparte Documentos con Facilidad"
-  description: "Transforma el caos de papel en claridad digital. DigitalKeep te permite capturar, organizar y acceder a tus documentos importantes en cualquier lugar, en cualquier momento."
+  description: "Transforma el caos de papel en claridad digital. Keeplys te permite capturar, organizar y acceder a tus documentos importantes en cualquier lugar, en cualquier momento."
   cta_ios: "Descargar en App Store"
   cta_android: "Disponible en Google Play"
   or_text: "Disponible para iOS y Android"
@@ -61,7 +61,7 @@ how_it_works:
 # Download Section
 download:
   title: "¿Listo Para Ser Paperless?"
-  subtitle: "Descarga DigitalKeep gratis hoy y toma el control de tus documentos."
+  subtitle: "Descarga Keeplys gratis hoy y toma el control de tus documentos."
   cta_ios: "Descargar para iPhone"
   cta_android: "Descargar para Android"
 
@@ -71,18 +71,18 @@ footer:
   privacy: "Política de Privacidad"
   terms: "Términos de Servicio"
   contact: "Contáctanos"
-  copyright: "© 2024 DigitalKeep. Todos los derechos reservados."
+  copyright: "© 2024 Keeplys. Todos los derechos reservados."
   made_with: "Hecho con"
   in_location: "para todos"
 
 # Meta (SEO Optimizado)
 meta:
-  title: "DigitalKeep - App Escáner de Documentos Gratis para iOS & Android"
-  description: "Transforma papel en archivos digitales al instante. DigitalKeep es una app gratuita de escáner de documentos con detección automática de bordes, respaldo en iCloud y Google Drive, y acceso sin conexión. Descarga ahora para iPhone y Android."
+  title: "Keeplys - App Escáner de Documentos Gratis para iOS & Android"
+  description: "Transforma papel en archivos digitales al instante. Keeplys es una app gratuita de escáner de documentos con detección automática de bordes, respaldo en iCloud y Google Drive, y acceso sin conexión. Descarga ahora para iPhone y Android."
   keywords: "app escáner documentos, escáner PDF, escáner de documentos móvil, escanear documentos con teléfono, oficina sin papel, app organizador documentos, almacenamiento documentos nube, respaldo iCloud documentos, escáner Google Drive, app escáner gratis, mejor escáner documentos 2024, escanear recibos, digitalizar documentos, app gestión documentos"
   # Extended SEO metadata
-  og_title: "DigitalKeep - Escanea, Almacena y Organiza Documentos Gratis"
+  og_title: "Keeplys - Escanea, Almacena y Organiza Documentos Gratis"
   og_description: "La forma más inteligente de ser paperless. Escanea documentos en segundos con detección automática de bordes. Sincroniza en todos tus dispositivos con iCloud o Google Drive."
-  twitter_title: "DigitalKeep - Tus Documentos, Digitalizados"
+  twitter_title: "Keeplys - Tus Documentos, Digitalizados"
   twitter_description: "App escáner de documentos gratuita con escaneo inteligente, sincronización en la nube y acceso sin conexión. Disponible en iOS & Android."
 

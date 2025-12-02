@@ -14,7 +14,7 @@ nav:
 hero:
   tagline: "I Tuoi Documenti. Digitalizzati. Organizzati. Sicuri."
   headline: "Scansiona, Archivia e Condividi Documenti con Facilità"
-  description: "Trasforma il caos cartaceo in chiarezza digitale. DigitalKeep ti permette di acquisire, organizzare e accedere ai tuoi documenti importanti ovunque, in qualsiasi momento."
+  description: "Trasforma il caos cartaceo in chiarezza digitale. Keeplys ti permette di acquisire, organizzare e accedere ai tuoi documenti importanti ovunque, in qualsiasi momento."
   cta_ios: "Scarica su App Store"
   cta_android: "Scarica da Google Play"
   or_text: "Disponibile per iOS e Android"
@@ -61,7 +61,7 @@ how_it_works:
 # Download Section
 download:
   title: "Pronto per Diventare Paperless?"
-  subtitle: "Scarica DigitalKeep gratis oggi e prendi il controllo dei tuoi documenti."
+  subtitle: "Scarica Keeplys gratis oggi e prendi il controllo dei tuoi documenti."
   cta_ios: "Scarica per iPhone"
   cta_android: "Scarica per Android"
 
@@ -71,18 +71,18 @@ footer:
   privacy: "Informativa sulla Privacy"
   terms: "Termini di Servizio"
   contact: "Contattaci"
-  copyright: "© 2024 DigitalKeep. Tutti i diritti riservati."
+  copyright: "© 2024 Keeplys. Tutti i diritti riservati."
   made_with: "Fatto con"
   in_location: "per tutti"
 
 # Meta (SEO Ottimizzato)
 meta:
-  title: "DigitalKeep - App Scanner Documenti Gratuita per iOS & Android"
-  description: "Trasforma la carta in file digitali istantaneamente. DigitalKeep è un'app gratuita per scanner documenti con rilevamento automatico dei bordi, backup su iCloud e Google Drive, e accesso offline. Scarica ora per iPhone e Android."
+  title: "Keeplys - App Scanner Documenti Gratuita per iOS & Android"
+  description: "Trasforma la carta in file digitali istantaneamente. Keeplys è un'app gratuita per scanner documenti con rilevamento automatico dei bordi, backup su iCloud e Google Drive, e accesso offline. Scarica ora per iPhone e Android."
   keywords: "app scanner documenti, scanner PDF, scanner documenti mobile, scansiona documenti con telefono, ufficio paperless, app organizzatore documenti, archiviazione documenti cloud, backup iCloud documenti, scanner Google Drive, app scanner gratuita, miglior scanner documenti 2024, scansiona scontrini, digitalizza documenti, app gestione documenti"
   # Extended SEO metadata
-  og_title: "DigitalKeep - Scansiona, Archivia e Organizza Documenti Gratis"
+  og_title: "Keeplys - Scansiona, Archivia e Organizza Documenti Gratis"
   og_description: "Il modo più intelligente per diventare paperless. Scansiona documenti in secondi con rilevamento automatico dei bordi. Sincronizza su tutti i dispositivi con iCloud o Google Drive."
-  twitter_title: "DigitalKeep - I Tuoi Documenti, Digitalizzati"
+  twitter_title: "Keeplys - I Tuoi Documenti, Digitalizzati"
   twitter_description: "App scanner documenti gratuita con scansione intelligente, sincronizzazione cloud e accesso offline. Disponibile su iOS & Android."
 

@@ -1,12 +1,12 @@
-# DigitalKeep - robots.txt
-# https://digitalkeep.app
+# Keeplys - robots.txt
+# https://keeplys.app
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: http://localhost:4001/sitemap.xml
+Sitemap: https://keeplys.app/sitemap.xml
 
 # Crawl delay (optional - be nice to servers)
 Crawl-delay: 1
@@ -63,5 +63,5 @@ Allow: /
 # Disallow: /
 
 # Host directive (for Yandex)
-Host: http://localhost:4001
+Host: https://keeplys.app
 

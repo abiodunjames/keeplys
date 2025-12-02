@@ -1,9 +1,9 @@
-# DigitalKeep Landing Page
+# Keeplys Landing Page
 # Jekyll Configuration
 
-title: DigitalKeep
+title: Keeplys
 description: Digitize, Store, and Organize Your Documents
-url: "https://digitalkeep.app"
+url: "https://keeplys.app"
 baseurl: ""
 
 # Default language
@@ -60,21 +60,21 @@ defaults:
       lang: "es"
 
 # App Store Links (replace with actual links)
-app_store_url: "https://apps.apple.com/app/digitalkeep"
-play_store_url: "https://play.google.com/store/apps/details?id=com.digitalkeep.app"
+app_store_url: "https://apps.apple.com/app/keeplys"
+play_store_url: "https://play.google.com/store/apps/details?id=com.keeplys.app"
 app_id_ios: "id123456789"
-app_id_android: "com.digitalkeep.app"
+app_id_android: "com.keeplys.app"
 
 # Social
-twitter: digitalkeep
-github: digitalkeep
+twitter: keeplys
+github: keeplys
 
 # Organization/Company Info (for structured data & GEO SEO)
 organization:
-  name: "DigitalKeep"
-  legal_name: "DigitalKeep Inc."
+  name: "Keeplys"
+  legal_name: "Keeplys Inc."
   logo: "/assets/images/logo.png"
-  email: "hello@digitalkeep.app"
+  email: "hello@keeplys.app"
   founded: "2024"
   # Geographic targeting (GEO SEO)
   address:

@@ -14,7 +14,7 @@ nav:
 hero:
   tagline: "Your Documents. Digitized. Organized. Secure."
   headline: "Scan, Store & Share Documents with Ease"
-  description: "Transform paper chaos into digital clarity. DigitalKeep lets you capture, organize, and access your important documents anywhere, anytime."
+  description: "Transform paper chaos into digital clarity. Keeplys lets you capture, organize, and access your important documents anywhere, anytime."
   cta_ios: "Download on the App Store"
   cta_android: "Get it on Google Play"
   or_text: "Available on iOS and Android"
@@ -61,7 +61,7 @@ how_it_works:
 # Download Section
 download:
   title: "Ready to Go Paperless?"
-  subtitle: "Download DigitalKeep free today and take control of your documents."
+  subtitle: "Download Keeplys free today and take control of your documents."
   cta_ios: "Download for iPhone"
   cta_android: "Download for Android"
 
@@ -71,18 +71,18 @@ footer:
   privacy: "Privacy Policy"
   terms: "Terms of Service"
   contact: "Contact Us"
-  copyright: "© 2024 DigitalKeep. All rights reserved."
+  copyright: "© 2024 Keeplys. All rights reserved."
   made_with: "Made with"
   in_location: "for everyone"
 
 # Meta (SEO Optimized)
 meta:
-  title: "DigitalKeep - Free Document Scanner & Organizer App for iOS & Android"
-  description: "Transform paper into digital files instantly. DigitalKeep is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android."
+  title: "Keeplys - Free Document Scanner & Organizer App for iOS & Android"
+  description: "Transform paper into digital files instantly. Keeplys is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android."
   keywords: "document scanner app, PDF scanner, mobile document scanner, scan documents with phone, paperless office, document organizer app, cloud document storage, iCloud document backup, Google Drive scanner, free scanner app, best document scanner 2024, scan receipts, digitize documents, document management app, OCR scanner"
   # Extended SEO metadata
-  og_title: "DigitalKeep - Scan, Store & Organize Documents Free"
+  og_title: "Keeplys - Scan, Store & Organize Documents Free"
   og_description: "The smartest way to go paperless. Scan documents in seconds with automatic edge detection. Sync across all devices with iCloud or Google Drive."
-  twitter_title: "DigitalKeep - Your Documents, Digitized"
+  twitter_title: "Keeplys - Your Documents, Digitized"
   twitter_description: "Free document scanner app with smart scanning, cloud sync, and offline access. Available on iOS & Android."
 

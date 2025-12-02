@@ -1,6 +1,6 @@
-# DigitalKeep Landing Page
+# Keeplys Landing Page
 
-A modern, multilingual landing page for **DigitalKeep** — a document scanning and organization app available on iOS and Android.
+A modern, multilingual landing page for **Keeplys** — a document scanning and organization app available on iOS and Android.
 
 ![Jekyll](https://img.shields.io/badge/Jekyll-4.3-CC0000?style=flat&logo=jekyll)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -8,9 +8,9 @@ A modern, multilingual landing page for **DigitalKeep** — a document scanning 
 
 ## 🌟 Overview
 
-This landing page showcases DigitalKeep's features and provides download links for the mobile app. Built with Jekyll for static site generation, it features a clean, modern design with full internationalization support.
+This landing page showcases Keeplys's features and provides download links for the mobile app. Built with Jekyll for static site generation, it features a clean, modern design with full internationalization support.
 
-**Live Site:** [https://digitalkeep.app](https://digitalkeep.app)
+**Live Site:** [https://keeplys.app](https://keeplys.app)
 
 ---
 
@@ -41,7 +41,7 @@ This landing page showcases DigitalKeep's features and provides download links f
 ## 📁 Project Structure
 
 ```
-DigitalKeepLandingPage/
+KeeplysLandingPage/
 ├── _config.yml           # Jekyll configuration
 ├── _data/                # Translation files
 │   ├── en.yml           # English translations
@@ -96,8 +96,8 @@ DigitalKeepLandingPage/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/digitalkeep-landing.git
-   cd digitalkeep-landing
+   git clone https://github.com/yourusername/keeplys-landing.git
+   cd keeplys-landing
    ```
 
 2. **Install dependencies:**
@@ -219,14 +219,14 @@ play_store_url: "https://play.google.com/store/apps/details?id=your.app.package"
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `title` | Site title | DigitalKeep |
+| `title` | Site title | Keeplys |
 | `description` | Site description | Digitize, Store, and Organize Your Documents |
-| `url` | Production URL | https://digitalkeep.app |
+| `url` | Production URL | https://keeplys.app |
 | `default_lang` | Default language | en |
 | `languages` | Supported languages array | ["en", "de", "it", "es"] |
 | `app_store_url` | iOS App Store link | — |
 | `play_store_url` | Google Play Store link | — |
-| `twitter` | Twitter handle | digitalkeep |
+| `twitter` | Twitter handle | keeplys |
 | `google_analytics` | GA tracking ID (optional) | — |
 
 ---
@@ -313,6 +313,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 <p align="center">
-  Made with ♥ for <strong>DigitalKeep</strong>
+  Made with ♥ for <strong>Keeplys</strong>
 </p>
 

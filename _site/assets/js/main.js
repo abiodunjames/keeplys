@@ -1,5 +1,5 @@
 /**
- * DigitalKeep Landing Page
+ * Keeplys Landing Page
  * Main JavaScript file
  */
 
