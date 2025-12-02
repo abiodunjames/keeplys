@@ -1,18 +1,22 @@
 {% assign t = site.data[page.lang] | default: site.data.en %}
 
-<section id="how-it-works" class="how-it-works">
+<section id="how-it-works" class="how-it-works" aria-labelledby="how-it-works-title" itemscope itemtype="https://schema.org/HowTo">
+  <meta itemprop="name" content="{{ t.how_it_works.title }}">
+  <meta itemprop="description" content="{{ t.how_it_works.subtitle }}">
+  
   <div class="how-container">
-    <div class="section-header">
+    <header class="section-header">
       <span class="section-badge">How It Works</span>
-      <h2 class="section-title">{{ t.how_it_works.title }}</h2>
+      <h2 id="how-it-works-title" class="section-title">{{ t.how_it_works.title }}</h2>
       <p class="section-subtitle">{{ t.how_it_works.subtitle }}</p>
-    </div>
+    </header>
     
     <div class="steps-wrapper">
-      <div class="steps-grid">
+      <ol class="steps-grid" role="list" aria-label="Getting started steps">
         {% for step in t.how_it_works.steps %}
-        <div class="step-card">
-          <div class="step-icon-wrapper">
+        <li class="step-card" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+          <meta itemprop="position" content="{{ step.number }}">
+          <div class="step-icon-wrapper" aria-hidden="true">
             {% if step.number == "1" %}
             <i class="fa-regular fa-image step-icon"></i>
             {% elsif step.number == "2" %}
@@ -21,12 +25,12 @@
             <i class="fa-regular fa-circle-check step-icon"></i>
             {% endif %}
           </div>
-          <div class="step-number">{{ step.number }}</div>
-          <h3 class="step-title">{{ step.title }}</h3>
-          <p class="step-description">{{ step.description }}</p>
-        </div>
+          <div class="step-number" aria-hidden="true">{{ step.number }}</div>
+          <h3 class="step-title" itemprop="name">{{ step.title }}</h3>
+          <p class="step-description" itemprop="text">{{ step.description }}</p>
+        </li>
         {% endfor %}
-      </div>
+      </ol>
     </div>
   </div>
 </section>

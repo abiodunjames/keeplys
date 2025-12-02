@@ -1,35 +1,39 @@
 {% assign t = site.data[page.lang] | default: site.data.en %}
 
-<section class="hero">
-  <div class="hero-bg">
+<section class="hero" aria-labelledby="hero-headline" itemscope itemtype="https://schema.org/SoftwareApplication">
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="operatingSystem" content="iOS, Android">
+  <meta itemprop="applicationCategory" content="UtilitiesApplication">
+  
+  <div class="hero-bg" aria-hidden="true">
     <div class="hero-pattern"></div>
   </div>
   
   <div class="hero-container">
     <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
+      <div class="hero-badge" role="status">
+        <span class="badge-dot" aria-hidden="true"></span>
         <span class="badge-text">{{ t.hero.or_text }}</span>
       </div>
       
-      <h1 class="hero-headline">
+      <h1 id="hero-headline" class="hero-headline" itemprop="description">
         <span class="headline-accent">{{ t.hero.headline | split: ' ' | first }}</span>
         {{ t.hero.headline | split: ' ' | shift | join: ' ' }}
       </h1>
       
       <p class="hero-description">{{ t.hero.description }}</p>
       
-      <div class="hero-cta">
-        <a href="{{ site.app_store_url }}" class="store-button store-button-ios" target="_blank" rel="noopener">
-          <i class="fa-brands fa-apple store-icon"></i>
+      <div class="hero-cta" role="group" aria-label="Download options">
+        <a href="{{ site.app_store_url }}" class="store-button store-button-ios" target="_blank" rel="noopener noreferrer" aria-label="Download {{ site.title }} on the Apple App Store" itemprop="downloadUrl">
+          <i class="fa-brands fa-apple store-icon" aria-hidden="true"></i>
           <div class="store-text">
             <span class="store-label">Download on the</span>
             <span class="store-name">App Store</span>
           </div>
         </a>
         
-        <a href="{{ site.play_store_url }}" class="store-button store-button-android" target="_blank" rel="noopener">
-          <i class="fa-brands fa-google-play store-icon"></i>
+        <a href="{{ site.play_store_url }}" class="store-button store-button-android" target="_blank" rel="noopener noreferrer" aria-label="Get {{ site.title }} on Google Play Store" itemprop="downloadUrl">
+          <i class="fa-brands fa-google-play store-icon" aria-hidden="true"></i>
           <div class="store-text">
             <span class="store-label">GET IT ON</span>
             <span class="store-name">Google Play</span>

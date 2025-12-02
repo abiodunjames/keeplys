@@ -850,6 +850,9 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -1012,6 +1015,9 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-xl);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .download-feature {
@@ -1095,11 +1101,20 @@ button {
   margin-bottom: var(--space-base);
 }
 
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: var(--space-sm);
+}
+
 .footer-column a {
   display: block;
   font-size: 0.9rem;
   color: var(--color-gray-400);
-  margin-bottom: var(--space-sm);
   transition: color var(--transition-fast);
 }
 

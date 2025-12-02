@@ -1,41 +1,41 @@
 {% assign t = site.data[page.lang] | default: site.data.en %}
 
-<section id="download" class="download">
+<section id="download" class="download" aria-labelledby="download-title">
   <div class="download-container">
     <div class="download-content">
-      <div class="download-icon">
+      <div class="download-icon" aria-hidden="true">
         <i class="fa-solid fa-mobile-screen-button icon-main"></i>
       </div>
       
-      <h2 class="download-title">{{ t.download.title }}</h2>
+      <h2 id="download-title" class="download-title">{{ t.download.title }}</h2>
       <p class="download-subtitle">{{ t.download.subtitle }}</p>
       
-      <div class="download-buttons">
-        <a href="{{ site.app_store_url }}" class="download-btn download-btn-ios" target="_blank" rel="noopener">
-          <i class="fa-brands fa-apple btn-icon"></i>
+      <nav class="download-buttons" role="navigation" aria-label="Download links">
+        <a href="{{ site.app_store_url }}" class="download-btn download-btn-ios" target="_blank" rel="noopener noreferrer" aria-label="{{ t.download.cta_ios }} - {{ site.title }}">
+          <i class="fa-brands fa-apple btn-icon" aria-hidden="true"></i>
           <span>{{ t.download.cta_ios }}</span>
         </a>
         
-        <a href="{{ site.play_store_url }}" class="download-btn download-btn-android" target="_blank" rel="noopener">
-          <i class="fa-brands fa-google-play btn-icon"></i>
+        <a href="{{ site.play_store_url }}" class="download-btn download-btn-android" target="_blank" rel="noopener noreferrer" aria-label="{{ t.download.cta_android }} - {{ site.title }}">
+          <i class="fa-brands fa-google-play btn-icon" aria-hidden="true"></i>
           <span>{{ t.download.cta_android }}</span>
         </a>
-      </div>
+      </nav>
     </div>
     
-    <div class="download-features">
-      <div class="download-feature">
-        <i class="fa-solid fa-check df-icon"></i>
+    <ul class="download-features" role="list" aria-label="App benefits">
+      <li class="download-feature">
+        <i class="fa-solid fa-check df-icon" aria-hidden="true"></i>
         <span class="df-text">Free to Download</span>
-      </div>
-      <div class="download-feature">
-        <i class="fa-solid fa-check df-icon"></i>
+      </li>
+      <li class="download-feature">
+        <i class="fa-solid fa-check df-icon" aria-hidden="true"></i>
         <span class="df-text">No Ads</span>
-      </div>
-      <div class="download-feature">
-        <i class="fa-solid fa-check df-icon"></i>
+      </li>
+      <li class="download-feature">
+        <i class="fa-solid fa-check df-icon" aria-hidden="true"></i>
         <span class="df-text">Privacy First</span>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>

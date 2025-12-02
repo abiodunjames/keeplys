@@ -75,9 +75,14 @@ footer:
   made_with: "Made with"
   in_location: "for everyone"
 
-# Meta
+# Meta (SEO Optimized)
 meta:
-  title: "DigitalKeep - Document Scanner & Organizer App"
-  description: "Scan, store, and organize your documents with DigitalKeep. Available on iOS and Android. Free download."
-  keywords: "document scanner, PDF scanner, document organizer, paperless, cloud storage, document backup"
+  title: "DigitalKeep - Free Document Scanner & Organizer App for iOS & Android"
+  description: "Transform paper into digital files instantly. DigitalKeep is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android."
+  keywords: "document scanner app, PDF scanner, mobile document scanner, scan documents with phone, paperless office, document organizer app, cloud document storage, iCloud document backup, Google Drive scanner, free scanner app, best document scanner 2024, scan receipts, digitize documents, document management app, OCR scanner"
+  # Extended SEO metadata
+  og_title: "DigitalKeep - Scan, Store & Organize Documents Free"
+  og_description: "The smartest way to go paperless. Scan documents in seconds with automatic edge detection. Sync across all devices with iCloud or Google Drive."
+  twitter_title: "DigitalKeep - Your Documents, Digitized"
+  twitter_description: "Free document scanner app with smart scanning, cloud sync, and offline access. Available on iOS & Android."
 

@@ -10,6 +10,13 @@ baseurl: ""
 default_lang: en
 languages: ["en", "de", "it", "es"]
 
+# Language region mappings for hreflang (GEO SEO)
+language_regions:
+  en: "en"
+  de: "de-DE"
+  it: "it-IT"
+  es: "es-ES"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -55,11 +62,50 @@ defaults:
 # App Store Links (replace with actual links)
 app_store_url: "https://apps.apple.com/app/digitalkeep"
 play_store_url: "https://play.google.com/store/apps/details?id=com.digitalkeep.app"
+app_id_ios: "id123456789"
+app_id_android: "com.digitalkeep.app"
 
 # Social
 twitter: digitalkeep
 github: digitalkeep
 
+# Organization/Company Info (for structured data & GEO SEO)
+organization:
+  name: "DigitalKeep"
+  legal_name: "DigitalKeep Inc."
+  logo: "/assets/images/logo.png"
+  email: "hello@digitalkeep.app"
+  founded: "2024"
+  # Geographic targeting (GEO SEO)
+  address:
+    country: "US"
+    region: "Global"
+  # Service areas for local SEO
+  service_areas:
+    - "United States"
+    - "Germany"
+    - "Italy"
+    - "Spain"
+    - "United Kingdom"
+    - "Canada"
+    - "Australia"
+
+# SEO Settings
+seo:
+  type: "SoftwareApplication"
+  category: "ProductivityApplication"
+  operating_system: "iOS, Android"
+  application_category: "UtilitiesApplication"
+  rating: "4.8"
+  rating_count: "1250"
+  price: "0"
+  currency: "USD"
+
 # Analytics (optional)
-# google_analytics: UA-XXXXXXXX-X
+# google_analytics: G-XXXXXXXXXX
+# google_site_verification: "your-verification-code"
+
+# Webmaster tools verification (optional)
+# bing_site_verification: "your-bing-code"
+# yandex_verification: "your-yandex-code"
 

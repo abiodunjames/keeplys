@@ -1,17 +1,17 @@
 {% assign t = site.data[page.lang] | default: site.data.en %}
 
-<section id="features" class="features">
+<section id="features" class="features" aria-labelledby="features-title">
   <div class="features-container">
-    <div class="section-header">
+    <header class="section-header">
       <span class="section-badge">Features</span>
-      <h2 class="section-title">{{ t.features.title }}</h2>
+      <h2 id="features-title" class="section-title">{{ t.features.title }}</h2>
       <p class="section-subtitle">{{ t.features.subtitle }}</p>
-    </div>
+    </header>
     
-    <div class="features-grid">
+    <div class="features-grid" role="list" aria-label="App features">
       {% for feature in t.features.items %}
-      <div class="feature-card" data-delay="{{ forloop.index | minus: 1 | times: 100 }}">
-        <div class="feature-icon-wrapper">
+      <article class="feature-card" role="listitem" data-delay="{{ forloop.index | minus: 1 | times: 100 }}" itemscope itemtype="https://schema.org/ItemList">
+        <div class="feature-icon-wrapper" aria-hidden="true">
           {% if forloop.index == 1 %}
           <i class="fa-regular fa-image feature-icon"></i>
           {% elsif forloop.index == 2 %}
@@ -26,9 +26,9 @@
           <i class="fa-regular fa-bookmark feature-icon"></i>
           {% endif %}
         </div>
-        <h3 class="feature-title">{{ feature.title }}</h3>
-        <p class="feature-description">{{ feature.description }}</p>
-      </div>
+        <h3 class="feature-title" itemprop="name">{{ feature.title }}</h3>
+        <p class="feature-description" itemprop="description">{{ feature.description }}</p>
+      </article>
       {% endfor %}
     </div>
   </div>

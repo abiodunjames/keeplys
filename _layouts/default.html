@@ -1,35 +1,121 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.default_lang }}">
+<html lang="{{ page.lang | default: site.default_lang }}" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   {% assign t = site.data[page.lang] | default: site.data.en %}
+  {% assign current_lang = page.lang | default: site.default_lang %}
+  {% assign lang_region = site.language_regions[current_lang] | default: current_lang %}
   
+  <!-- Primary Meta Tags -->
   <title>{{ t.meta.title }}</title>
+  <meta name="title" content="{{ t.meta.title }}">
   <meta name="description" content="{{ t.meta.description }}">
   <meta name="keywords" content="{{ t.meta.keywords }}">
+  <meta name="author" content="{{ site.organization.name }}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
   
-  <!-- Open Graph -->
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  
+  <!-- Hreflang Tags for International SEO (GEO) -->
+  {% assign page_path = page.url | remove_first: '/' %}
+  {% if page_path == '' or page_path == 'index.html' %}
+    {% assign base_path = '' %}
+  {% elsif page_path contains 'de/' %}
+    {% assign base_path = page_path | remove_first: 'de/' %}
+  {% elsif page_path contains 'it/' %}
+    {% assign base_path = page_path | remove_first: 'it/' %}
+  {% elsif page_path contains 'es/' %}
+    {% assign base_path = page_path | remove_first: 'es/' %}
+  {% else %}
+    {% assign base_path = page_path %}
+  {% endif %}
+  
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/{{ base_path }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ site.url }}/de/{{ base_path }}">
+  <link rel="alternate" hreflang="it-IT" href="{{ site.url }}/it/{{ base_path }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ site.url }}/es/{{ base_path }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ base_path }}">
+  
+  <!-- Geographic Meta Tags (GEO SEO) -->
+  <meta name="geo.region" content="{{ site.organization.address.country }}">
+  <meta name="geo.placename" content="{{ site.organization.address.region }}">
+  <meta name="ICBM" content="">
+  <meta name="DC.title" content="{{ t.meta.title }}">
+  <meta name="DC.creator" content="{{ site.organization.name }}">
+  <meta name="DC.language" content="{{ lang_region }}">
+  
+  <!-- Content Language -->
+  <meta http-equiv="content-language" content="{{ lang_region }}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ t.meta.title }}">
   <meta property="og:description" content="{{ t.meta.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.title }} - {{ t.meta.description }}">
+  <meta property="og:locale" content="{{ lang_region | replace: '-', '_' }}">
+  {% for lang in site.languages %}
+    {% if lang != current_lang %}
+      {% assign alt_region = site.language_regions[lang] | default: lang %}
+      <meta property="og:locale:alternate" content="{{ alt_region | replace: '-', '_' }}">
+    {% endif %}
+  {% endfor %}
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ site.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.twitter }}">
   <meta name="twitter:title" content="{{ t.meta.title }}">
   <meta name="twitter:description" content="{{ t.meta.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.png">
+  <meta name="twitter:image:alt" content="{{ site.title }} - {{ t.meta.description }}">
+  
+  <!-- App Links Meta Tags -->
+  <meta property="al:ios:app_store_id" content="{{ site.app_id_ios }}">
+  <meta property="al:ios:app_name" content="{{ site.title }}">
+  <meta property="al:ios:url" content="{{ site.app_store_url }}">
+  <meta property="al:android:package" content="{{ site.app_id_android }}">
+  <meta property="al:android:app_name" content="{{ site.title }}">
+  <meta property="al:android:url" content="{{ site.play_store_url }}">
+  <meta name="apple-itunes-app" content="app-id={{ site.app_id_ios | remove: 'id' }}">
+  <meta name="google-play-app" content="app-id={{ site.app_id_android }}">
+  
+  <!-- Mobile App Meta -->
+  <meta name="application-name" content="{{ site.title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1E40AF">
+  <meta name="msapplication-TileColor" content="#1E40AF">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
   
-  <!-- Fonts - DM Sans & DM Serif Display for modern, clean typography -->
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+  <!-- Fonts - DM Sans & DM Serif Display for modern, clean typography -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
@@ -37,6 +123,9 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  <!-- Structured Data (JSON-LD) -->
+  {% include seo-schema.html %}
   
   {% seo %}
 </head>

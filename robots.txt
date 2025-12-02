@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /robots.txt
+---
 # DigitalKeep - robots.txt
 # https://digitalkeep.app
 
@@ -6,7 +10,7 @@ User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: http://localhost:4001/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
 
 # Crawl delay (optional - be nice to servers)
 Crawl-delay: 1
@@ -63,5 +67,5 @@ Allow: /
 # Disallow: /
 
 # Host directive (for Yandex)
-Host: http://localhost:4001
+Host: {{ site.url }}
 
