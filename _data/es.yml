@@ -1,0 +1,83 @@
+# Spanish translations
+lang_name: "Español"
+lang_code: "es"
+
+# Navigation
+nav:
+  features: "Características"
+  how_it_works: "Cómo Funciona"
+  download: "Descargar"
+  privacy: "Privacidad"
+  terms: "Términos"
+
+# Hero Section
+hero:
+  tagline: "Tus Documentos. Digitalizados. Organizados. Seguros."
+  headline: "Escanea, Almacena y Comparte Documentos con Facilidad"
+  description: "Transforma el caos de papel en claridad digital. DigitalKeep te permite capturar, organizar y acceder a tus documentos importantes en cualquier lugar, en cualquier momento."
+  cta_ios: "Descargar en App Store"
+  cta_android: "Disponible en Google Play"
+  or_text: "Disponible para iOS y Android"
+
+# Features Section
+features:
+  title: "Todo Lo Que Necesitas Para Ser Paperless"
+  subtitle: "Funciones potentes diseñadas para la simplicidad"
+  items:
+    - icon: "📷"
+      title: "Escaneo Inteligente de Documentos"
+      description: "Captura documentos al instante con detección automática de bordes y mejora de imagen. Escaneos completos en menos de 30 segundos."
+    - icon: "☁️"
+      title: "Respaldo en la Nube y Sincronización"
+      description: "Respaldo seguro en iCloud o Google Drive. Accede a tus documentos desde todos tus dispositivos, en cualquier parte del mundo."
+    - icon: "📁"
+      title: "Organización Sin Esfuerzo"
+      description: "Organiza documentos en carpetas con nomenclatura automática inteligente. Encuentra cualquier documento en menos de 10 segundos."
+    - icon: "🔐"
+      title: "Seguridad de Nivel Bancario"
+      description: "Tus documentos están encriptados y almacenados de forma segura. Inicia sesión con Apple o Google para una autenticación perfecta."
+    - icon: "📤"
+      title: "Compartir al Instante"
+      description: "Comparte documentos por correo electrónico o tus aplicaciones favoritas con un solo toque. Mantén la calidad original siempre."
+    - icon: "📱"
+      title: "Funciona Sin Conexión"
+      description: "Accede a documentos vistos recientemente sin conexión a internet. La sincronización ocurre automáticamente cuando vuelves a estar en línea."
+
+# How It Works Section
+how_it_works:
+  title: "Comienza en Minutos"
+  subtitle: "Tres simples pasos hacia la libertad documental digital"
+  steps:
+    - number: "1"
+      title: "Escanea o Sube"
+      description: "Usa tu cámara para capturar documentos o sube fotos y PDFs existentes desde tu dispositivo."
+    - number: "2"
+      title: "Organiza Automáticamente"
+      description: "Los documentos se mejoran, se nombran con fechas y se ordenan en carpetas. Cero esfuerzo requerido."
+    - number: "3"
+      title: "Accede Desde Cualquier Lugar"
+      description: "Activa la sincronización en la nube y accede a tus documentos desde cualquier dispositivo, en cualquier momento."
+
+# Download Section
+download:
+  title: "¿Listo Para Ser Paperless?"
+  subtitle: "Descarga DigitalKeep gratis hoy y toma el control de tus documentos."
+  cta_ios: "Descargar para iPhone"
+  cta_android: "Descargar para Android"
+
+# Footer
+footer:
+  tagline: "Digitaliza tu vida, un documento a la vez."
+  privacy: "Política de Privacidad"
+  terms: "Términos de Servicio"
+  contact: "Contáctanos"
+  copyright: "© 2024 DigitalKeep. Todos los derechos reservados."
+  made_with: "Hecho con"
+  in_location: "para todos"
+
+# Meta
+meta:
+  title: "DigitalKeep - App Escáner y Organizador de Documentos"
+  description: "Escanea, almacena y organiza tus documentos con DigitalKeep. Disponible en iOS y Android. Descarga gratuita."
+  keywords: "escáner de documentos, escáner PDF, organizador de documentos, paperless, almacenamiento en la nube, respaldo de documentos"
+

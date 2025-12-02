@@ -1,0 +1,41 @@
+{% assign t = site.data[page.lang] | default: site.data.en %}
+
+<section id="download" class="download">
+  <div class="download-container">
+    <div class="download-content">
+      <div class="download-icon">
+        <i class="fa-solid fa-mobile-screen-button icon-main"></i>
+      </div>
+      
+      <h2 class="download-title">{{ t.download.title }}</h2>
+      <p class="download-subtitle">{{ t.download.subtitle }}</p>
+      
+      <div class="download-buttons">
+        <a href="{{ site.app_store_url }}" class="download-btn download-btn-ios" target="_blank" rel="noopener">
+          <i class="fa-brands fa-apple btn-icon"></i>
+          <span>{{ t.download.cta_ios }}</span>
+        </a>
+        
+        <a href="{{ site.play_store_url }}" class="download-btn download-btn-android" target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-play btn-icon"></i>
+          <span>{{ t.download.cta_android }}</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="download-features">
+      <div class="download-feature">
+        <i class="fa-solid fa-check df-icon"></i>
+        <span class="df-text">Free to Download</span>
+      </div>
+      <div class="download-feature">
+        <i class="fa-solid fa-check df-icon"></i>
+        <span class="df-text">No Ads</span>
+      </div>
+      <div class="download-feature">
+        <i class="fa-solid fa-check df-icon"></i>
+        <span class="df-text">Privacy First</span>
+      </div>
+    </div>
+  </div>
+</section>

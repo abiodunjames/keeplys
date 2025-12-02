@@ -1,0 +1,101 @@
+{% assign t = site.data[page.lang] | default: site.data.en %}
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-pattern"></div>
+  </div>
+  
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">{{ t.hero.or_text }}</span>
+      </div>
+      
+      <h1 class="hero-headline">
+        <span class="headline-accent">{{ t.hero.headline | split: ' ' | first }}</span>
+        {{ t.hero.headline | split: ' ' | shift | join: ' ' }}
+      </h1>
+      
+      <p class="hero-description">{{ t.hero.description }}</p>
+      
+      <div class="hero-cta">
+        <a href="{{ site.app_store_url }}" class="store-button store-button-ios" target="_blank" rel="noopener">
+          <i class="fa-brands fa-apple store-icon"></i>
+          <div class="store-text">
+            <span class="store-label">Download on the</span>
+            <span class="store-name">App Store</span>
+          </div>
+        </a>
+        
+        <a href="{{ site.play_store_url }}" class="store-button store-button-android" target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-play store-icon"></i>
+          <div class="store-text">
+            <span class="store-label">GET IT ON</span>
+            <span class="store-name">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-preview">
+              <div class="app-header">
+                <span class="app-greeting">Hello <i class="fa-regular fa-hand"></i></span>
+                <span class="app-title">DigitalKeep</span>
+              </div>
+              <div class="app-stats">
+                <div class="stat-card">
+                  <i class="fa-regular fa-file-lines stat-icon"></i>
+                  <span class="stat-value">12</span>
+                  <span class="stat-label">Documents</span>
+                </div>
+                <div class="stat-card">
+                  <i class="fa-solid fa-cloud stat-icon"></i>
+                  <span class="stat-value">5.2</span>
+                  <span class="stat-label">MB Synced</span>
+                </div>
+              </div>
+              <div class="app-docs">
+                <div class="doc-item">
+                  <div class="doc-thumb">
+                    <i class="fa-regular fa-file-pdf"></i>
+                  </div>
+                  <div class="doc-info">
+                    <span class="doc-name">Invoice_2024</span>
+                    <span class="doc-date">Today</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right doc-arrow"></i>
+                </div>
+                <div class="doc-item">
+                  <div class="doc-thumb">
+                    <i class="fa-regular fa-file-lines"></i>
+                  </div>
+                  <div class="doc-info">
+                    <span class="doc-name">Contract</span>
+                    <span class="doc-date">Yesterday</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right doc-arrow"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="floating-card floating-card-1">
+        <i class="fa-solid fa-check card-icon"></i>
+        <span class="card-text">Synced to Cloud</span>
+      </div>
+      
+      <div class="floating-card floating-card-2">
+        <i class="fa-solid fa-camera card-icon"></i>
+        <span class="card-text">Scan Complete</span>
+      </div>
+    </div>
+  </div>
+</section>

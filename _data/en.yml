@@ -1,0 +1,83 @@
+# English translations
+lang_name: "English"
+lang_code: "en"
+
+# Navigation
+nav:
+  features: "Features"
+  how_it_works: "How It Works"
+  download: "Download"
+  privacy: "Privacy"
+  terms: "Terms"
+
+# Hero Section
+hero:
+  tagline: "Your Documents. Digitized. Organized. Secure."
+  headline: "Scan, Store & Share Documents with Ease"
+  description: "Transform paper chaos into digital clarity. DigitalKeep lets you capture, organize, and access your important documents anywhere, anytime."
+  cta_ios: "Download on the App Store"
+  cta_android: "Get it on Google Play"
+  or_text: "Available on iOS and Android"
+
+# Features Section
+features:
+  title: "Everything You Need to Go Paperless"
+  subtitle: "Powerful features designed for simplicity"
+  items:
+    - icon: "📷"
+      title: "Smart Document Scanning"
+      description: "Capture documents instantly with automatic edge detection and image enhancement. Scans complete in under 30 seconds."
+    - icon: "☁️"
+      title: "Cloud Backup & Sync"
+      description: "Securely backup to iCloud or Google Drive. Access your documents across all your devices, anywhere in the world."
+    - icon: "📁"
+      title: "Effortless Organization"
+      description: "Organize documents into folders with smart auto-naming. Find any document in under 10 seconds."
+    - icon: "🔐"
+      title: "Bank-Level Security"
+      description: "Your documents are encrypted and stored securely. Sign in with Apple or Google for seamless authentication."
+    - icon: "📤"
+      title: "Instant Sharing"
+      description: "Share documents via email or your favorite apps with a single tap. Maintain original quality every time."
+    - icon: "📱"
+      title: "Works Offline"
+      description: "Access your recently viewed documents without an internet connection. Sync happens automatically when you're back online."
+
+# How It Works Section
+how_it_works:
+  title: "Get Started in Minutes"
+  subtitle: "Three simple steps to digital document freedom"
+  steps:
+    - number: "1"
+      title: "Scan or Upload"
+      description: "Use your camera to capture documents or upload existing photos and PDFs from your device."
+    - number: "2"
+      title: "Organize Automatically"
+      description: "Documents are enhanced, named with dates, and sorted into folders. Zero effort required."
+    - number: "3"
+      title: "Access Anywhere"
+      description: "Enable cloud sync and access your documents from any device, anytime."
+
+# Download Section
+download:
+  title: "Ready to Go Paperless?"
+  subtitle: "Download DigitalKeep free today and take control of your documents."
+  cta_ios: "Download for iPhone"
+  cta_android: "Download for Android"
+
+# Footer
+footer:
+  tagline: "Digitize your life, one document at a time."
+  privacy: "Privacy Policy"
+  terms: "Terms of Service"
+  contact: "Contact Us"
+  copyright: "© 2024 DigitalKeep. All rights reserved."
+  made_with: "Made with"
+  in_location: "for everyone"
+
+# Meta
+meta:
+  title: "DigitalKeep - Document Scanner & Organizer App"
+  description: "Scan, store, and organize your documents with DigitalKeep. Available on iOS and Android. Free download."
+  keywords: "document scanner, PDF scanner, document organizer, paperless, cloud storage, document backup"
+

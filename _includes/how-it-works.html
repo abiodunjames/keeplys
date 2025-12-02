@@ -1,0 +1,32 @@
+{% assign t = site.data[page.lang] | default: site.data.en %}
+
+<section id="how-it-works" class="how-it-works">
+  <div class="how-container">
+    <div class="section-header">
+      <span class="section-badge">How It Works</span>
+      <h2 class="section-title">{{ t.how_it_works.title }}</h2>
+      <p class="section-subtitle">{{ t.how_it_works.subtitle }}</p>
+    </div>
+    
+    <div class="steps-wrapper">
+      <div class="steps-grid">
+        {% for step in t.how_it_works.steps %}
+        <div class="step-card">
+          <div class="step-icon-wrapper">
+            {% if step.number == "1" %}
+            <i class="fa-regular fa-image step-icon"></i>
+            {% elsif step.number == "2" %}
+            <i class="fa-regular fa-folder-open step-icon"></i>
+            {% else %}
+            <i class="fa-regular fa-circle-check step-icon"></i>
+            {% endif %}
+          </div>
+          <div class="step-number">{{ step.number }}</div>
+          <h3 class="step-title">{{ step.title }}</h3>
+          <p class="step-description">{{ step.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

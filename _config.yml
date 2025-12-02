@@ -1,0 +1,65 @@
+# DigitalKeep Landing Page
+# Jekyll Configuration
+
+title: DigitalKeep
+description: Digitize, Store, and Organize Your Documents
+url: "https://digitalkeep.app"
+baseurl: ""
+
+# Default language
+default_lang: en
+languages: ["en", "de", "it", "es"]
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  features:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+  - scope:
+      path: "de"
+    values:
+      lang: "de"
+  - scope:
+      path: "it"
+    values:
+      lang: "it"
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
+
+# App Store Links (replace with actual links)
+app_store_url: "https://apps.apple.com/app/digitalkeep"
+play_store_url: "https://play.google.com/store/apps/details?id=com.digitalkeep.app"
+
+# Social
+twitter: digitalkeep
+github: digitalkeep
+
+# Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+

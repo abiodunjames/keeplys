@@ -1,0 +1,35 @@
+{% assign t = site.data[page.lang] | default: site.data.en %}
+
+<section id="features" class="features">
+  <div class="features-container">
+    <div class="section-header">
+      <span class="section-badge">Features</span>
+      <h2 class="section-title">{{ t.features.title }}</h2>
+      <p class="section-subtitle">{{ t.features.subtitle }}</p>
+    </div>
+    
+    <div class="features-grid">
+      {% for feature in t.features.items %}
+      <div class="feature-card" data-delay="{{ forloop.index | minus: 1 | times: 100 }}">
+        <div class="feature-icon-wrapper">
+          {% if forloop.index == 1 %}
+          <i class="fa-regular fa-image feature-icon"></i>
+          {% elsif forloop.index == 2 %}
+          <i class="fa-regular fa-hard-drive feature-icon"></i>
+          {% elsif forloop.index == 3 %}
+          <i class="fa-regular fa-folder-open feature-icon"></i>
+          {% elsif forloop.index == 4 %}
+          <i class="fa-regular fa-id-badge feature-icon"></i>
+          {% elsif forloop.index == 5 %}
+          <i class="fa-regular fa-paper-plane feature-icon"></i>
+          {% else %}
+          <i class="fa-regular fa-bookmark feature-icon"></i>
+          {% endif %}
+        </div>
+        <h3 class="feature-title">{{ feature.title }}</h3>
+        <p class="feature-description">{{ feature.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
