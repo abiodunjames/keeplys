@@ -150,19 +150,11 @@ button {
 }
 
 .logo-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 36px;
   height: 36px;
-  background: var(--color-primary);
-  color: var(--color-white);
   border-radius: var(--radius-md);
-}
-
-.logo-icon svg {
-  width: 18px;
-  height: 18px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -1070,7 +1062,8 @@ button {
 }
 
 .footer-logo .logo-icon {
-  background: var(--color-accent);
+  width: 36px;
+  height: 36px;
 }
 
 .footer-tagline {
