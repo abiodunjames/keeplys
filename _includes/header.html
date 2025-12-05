@@ -11,6 +11,7 @@
     <div class="nav-links" role="menubar">
       <a href="#features" class="nav-link" role="menuitem" itemprop="url">{{ t.nav.features }}</a>
       <a href="#how-it-works" class="nav-link" role="menuitem" itemprop="url">{{ t.nav.how_it_works }}</a>
+      <a href="{% if current_lang == 'en' %}/blog/{% else %}/{{ current_lang }}/blog/{% endif %}" class="nav-link" role="menuitem" itemprop="url">{{ t.nav.blog | default: "Blog" }}</a>
       <a href="#download" class="nav-link nav-link-cta" role="menuitem" itemprop="url">{{ t.nav.download }}</a>
     </div>
     
@@ -40,6 +41,7 @@
   <div class="mobile-menu">
     <a href="#features" class="mobile-link">{{ t.nav.features }}</a>
     <a href="#how-it-works" class="mobile-link">{{ t.nav.how_it_works }}</a>
+    <a href="{% if current_lang == 'en' %}/blog/{% else %}/{{ current_lang }}/blog/{% endif %}" class="mobile-link">{{ t.nav.blog | default: "Blog" }}</a>
     <a href="#download" class="mobile-link">{{ t.nav.download }}</a>
     <div class="mobile-langs">
       <a href="/" class="mobile-lang {% if current_lang == 'en' %}active{% endif %}">EN</a>

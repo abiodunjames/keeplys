@@ -1,0 +1,46 @@
+---
+layout: default
+lang: en
+permalink: /changelog/
+---
+{% assign t = site.data[page.lang] | default: site.data.en %}
+
+<section class="changelog-page">
+  <div class="changelog-container">
+    <header class="changelog-header">
+      <span class="section-badge">{{ t.changelog.badge | default: "Changelog" }}</span>
+      <h1 class="section-title">{{ t.changelog.title | default: "What's New" }}</h1>
+      <p class="section-subtitle">{{ t.changelog.subtitle | default: "Stay up to date with the latest features, improvements, and bug fixes." }}</p>
+    </header>
+
+    <div class="changelog-timeline">
+
+      <!-- Version 1.0.0 -->
+      <article class="changelog-entry">
+        <div class="changelog-version-badge">
+          <span class="version-tag version-major">v1.0.0</span>
+          <span class="version-date">Dec 6, 2025</span>
+        </div>
+        <div class="changelog-content">
+          <h2 class="changelog-version-title">Initial Release 🎉</h2>
+          
+          <div class="changelog-section">
+            <div class="changelog-label changelog-label-new">
+              <i class="fa-solid fa-sparkles"></i> New
+            </div>
+            <ul class="changelog-list">
+              <li>Smart document scanning with automatic edge detection</li>
+              <li>Folder organization for your documents</li>
+              <li>PDF and image export</li>
+              <li>Share documents via email and apps</li>
+              <li>Auto-naming with date stamps</li>
+              <li>Available on iOS and Android</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+

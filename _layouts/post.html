@@ -1,0 +1,66 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] | default: site.data.en %}
+{% assign current_lang = page.lang | default: site.default_lang %}
+
+<article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="blog-post-container">
+    <header class="post-header">
+      <a href="{% if current_lang == 'en' %}/blog/{% else %}/{{ current_lang }}/blog/{% endif %}" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>{{ t.blog.back_to_blog | default: "Back to Blog" }}</span>
+      </a>
+      
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% if page.category %}
+        <span class="post-category">{{ page.category }}</span>
+        {% endif %}
+      </div>
+      
+      <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
+      
+      {% if page.author %}
+      <div class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">{{ page.author }}</span>
+      </div>
+      {% endif %}
+    </header>
+    
+    {% if page.image %}
+    <figure class="post-featured-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" itemprop="image">
+    </figure>
+    {% endif %}
+    
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+    
+    <footer class="post-footer">
+      <div class="post-share">
+        <span class="share-label">{{ t.blog.share | default: "Share this article" }}:</span>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="share-btn share-twitter" aria-label="Share on Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Share on LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:?subject={{ page.title | url_encode }}&body={{ site.url }}{{ page.url }}" class="share-btn share-email" aria-label="Share via Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
+      <a href="{% if current_lang == 'en' %}/blog/{% else %}/{{ current_lang }}/blog/{% endif %}" class="read-more-link">
+        {{ t.blog.more_articles | default: "Read more articles" }}
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </footer>
+  </div>
+</article>
+

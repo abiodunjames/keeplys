@@ -1,0 +1,67 @@
+---
+layout: default
+lang: en
+permalink: /blog/
+---
+{% assign t = site.data[page.lang] | default: site.data.en %}
+{% assign current_lang = page.lang | default: site.default_lang %}
+
+<section class="blog-page">
+  <div class="blog-container">
+    <header class="blog-header">
+      <span class="section-badge">{{ t.blog.badge | default: "Blog" }}</span>
+      <h1 class="section-title">{{ t.blog.title | default: "Tips, Updates & Insights" }}</h1>
+      <p class="section-subtitle">{{ t.blog.subtitle | default: "Stay up to date with the latest features, productivity tips, and document management best practices." }}</p>
+    </header>
+    
+    <div class="blog-grid">
+      {% assign posts = site.posts | where: "lang", current_lang %}
+      {% if posts.size == 0 %}
+        {% assign posts = site.posts | where: "lang", "en" %}
+      {% endif %}
+      {% if posts.size == 0 %}
+        {% assign posts = site.posts %}
+      {% endif %}
+      
+      {% for post in posts limit: 12 %}
+      <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+        {% if post.image %}
+        <a href="{{ post.url | relative_url }}" class="blog-card-image">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" itemprop="image" loading="lazy">
+        </a>
+        {% endif %}
+        
+        <div class="blog-card-content">
+          <div class="blog-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ post.date | date: "%b %d, %Y" }}
+            </time>
+            {% if post.category %}
+            <span class="blog-card-category">{{ post.category }}</span>
+            {% endif %}
+          </div>
+          
+          <h2 class="blog-card-title" itemprop="headline">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          
+          <p class="blog-card-excerpt" itemprop="description">
+            {{ post.excerpt | strip_html | truncate: 120 }}
+          </p>
+          
+          <a href="{{ post.url | relative_url }}" class="blog-card-link">
+            {{ t.blog.read_more | default: "Read more" }}
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      {% else %}
+      <div class="blog-empty">
+        <i class="fa-regular fa-newspaper"></i>
+        <p>{{ t.blog.no_posts | default: "No posts yet. Check back soon!" }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

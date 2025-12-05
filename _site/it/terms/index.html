@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
+  <!-- Google Analytics 4 (disabled on localhost) -->
+  
+  <script>
+    if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2BNYKLNR0M';
+      document.head.appendChild(script);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2BNYKLNR0M');
+    }
+  </script>
+  
+  
   
   
   
@@ -147,7 +163,7 @@
     "height": 512
   },
   "email": "hello@keeplys.app",
-  "foundingDate": "2024",
+  "foundingDate": "2025",
   "sameAs": [
     "https://twitter.com/keeplys",
     "https://github.com/keeplys"
@@ -248,7 +264,7 @@
     "@id": "http://localhost:4000/#app"
   },
   "datePublished": "2024-01-01",
-  "dateModified": "2025-12-02"
+  "dateModified": "2025-12-05"
 }
 </script>
 
@@ -313,6 +329,7 @@
     <div class="nav-links" role="menubar">
       <a href="#features" class="nav-link" role="menuitem" itemprop="url">Funzionalità</a>
       <a href="#how-it-works" class="nav-link" role="menuitem" itemprop="url">Come Funziona</a>
+      <a href="/it/blog/" class="nav-link" role="menuitem" itemprop="url">Blog</a>
       <a href="#download" class="nav-link nav-link-cta" role="menuitem" itemprop="url">Scarica</a>
     </div>
     
@@ -342,6 +359,7 @@
   <div class="mobile-menu">
     <a href="#features" class="mobile-link">Funzionalità</a>
     <a href="#how-it-works" class="mobile-link">Come Funziona</a>
+    <a href="/it/blog/" class="mobile-link">Blog</a>
     <a href="#download" class="mobile-link">Scarica</a>
     <div class="mobile-langs">
       <a href="/" class="mobile-lang ">EN</a>
@@ -382,7 +400,7 @@
       
       <h2>Contatti</h2>
       <p>Per domande su questi Termini di Servizio, contattaci a:</p>
-      <p><a href="mailto:legal@keeplys.app">legal@keeplys.app</a></p>
+      <p><a href="mailto:hello@keeplys.app">hello@keeplys.app</a></p>
     </div>
   </div>
 </section>
@@ -471,6 +489,7 @@
             <li><a href="#features">Funzionalità</a></li>
             <li><a href="#how-it-works">Come Funziona</a></li>
             <li><a href="#download">Scarica</a></li>
+            <li><a href="/it/changelog">Novità</a></li>
           </ul>
         </div>
         

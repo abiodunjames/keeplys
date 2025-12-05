@@ -19,6 +19,7 @@
             <li><a href="#features">{{ t.nav.features }}</a></li>
             <li><a href="#how-it-works">{{ t.nav.how_it_works }}</a></li>
             <li><a href="#download">{{ t.nav.download }}</a></li>
+            <li><a href="{% if current_lang == 'en' %}/changelog{% else %}/{{ current_lang }}/changelog{% endif %}">{{ t.footer.changelog | default: "Changelog" }}</a></li>
           </ul>
         </div>
         

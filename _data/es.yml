@@ -6,6 +6,7 @@ lang_code: "es"
 nav:
   features: "Características"
   how_it_works: "Cómo Funciona"
+  blog: "Blog"
   download: "Descargar"
   privacy: "Privacidad"
   terms: "Términos"
@@ -71,6 +72,7 @@ footer:
   privacy: "Política de Privacidad"
   terms: "Términos de Servicio"
   contact: "Contáctanos"
+  changelog: "Novedades"
   copyright: "© 2024 Keeplys. Todos los derechos reservados."
   made_with: "Hecho con"
   in_location: "para todos"
@@ -85,4 +87,21 @@ meta:
   og_description: "La forma más inteligente de ser paperless. Escanea documentos en segundos con detección automática de bordes. Sincroniza en todos tus dispositivos con iCloud o Google Drive."
   twitter_title: "Keeplys - Tus Documentos, Digitalizados"
   twitter_description: "App escáner de documentos gratuita con escaneo inteligente, sincronización en la nube y acceso sin conexión. Disponible en iOS & Android."
+
+# Changelog Section
+changelog:
+  badge: "Novedades"
+  title: "Qué Hay de Nuevo"
+  subtitle: "Mantente al día con las últimas funciones, mejoras y correcciones de errores."
+
+# Blog Section
+blog:
+  badge: "Blog"
+  title: "Consejos, Novedades e Ideas"
+  subtitle: "Mantente al día con las últimas funciones, consejos de productividad y mejores prácticas para la gestión de documentos."
+  read_more: "Leer más"
+  back_to_blog: "Volver al Blog"
+  share: "Compartir este artículo"
+  more_articles: "Leer más artículos"
+  no_posts: "Sin publicaciones todavía. ¡Vuelve pronto!"
 

@@ -6,6 +6,7 @@ lang_code: "de"
 nav:
   features: "Funktionen"
   how_it_works: "So funktioniert's"
+  blog: "Blog"
   download: "Download"
   privacy: "Datenschutz"
   terms: "AGB"
@@ -71,6 +72,7 @@ footer:
   privacy: "Datenschutzrichtlinie"
   terms: "Nutzungsbedingungen"
   contact: "Kontakt"
+  changelog: "Änderungsprotokoll"
   copyright: "© 2024 Keeplys. Alle Rechte vorbehalten."
   made_with: "Gemacht mit"
   in_location: "für alle"
@@ -85,4 +87,21 @@ meta:
   og_description: "Der intelligenteste Weg zum papierlosen Büro. Scannen Sie Dokumente in Sekunden mit automatischer Kantenerkennung. Synchronisieren Sie über alle Geräte mit iCloud oder Google Drive."
   twitter_title: "Keeplys - Ihre Dokumente, Digitalisiert"
   twitter_description: "Kostenlose Dokumentenscanner-App mit intelligenter Scan-Funktion, Cloud-Sync und Offline-Zugriff. Verfügbar für iOS & Android."
+
+# Changelog Section
+changelog:
+  badge: "Änderungsprotokoll"
+  title: "Was ist neu"
+  subtitle: "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Verbesserungen und Fehlerbehebungen."
+
+# Blog Section
+blog:
+  badge: "Blog"
+  title: "Tipps, Updates & Einblicke"
+  subtitle: "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Produktivitätstipps und Best Practices für die Dokumentenverwaltung."
+  read_more: "Mehr lesen"
+  back_to_blog: "Zurück zum Blog"
+  share: "Diesen Artikel teilen"
+  more_articles: "Weitere Artikel lesen"
+  no_posts: "Noch keine Beiträge. Schauen Sie bald wieder vorbei!"
 
