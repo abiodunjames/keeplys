@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Drowning in paper: 6-year search for a better way"
-date: 2024-01-15
+date: 2025-12-01
 author: James
 categories: [story, product]
+image: ./assets/images/documents.avif
 excerpt: "When I first moved to Germany, I expected challenges—language barriers, bureaucracy, adjusting to a new culture. What I didn't expect was the mountain of paper that would slowly take over my life. Over the last six years, I've accumulated hundreds, maybe thousands, of documents. This is the story of how that frustration led to building Keeplys."
+
 ---
 
 When I first moved to Germany, I expected challenges—language barriers, bureaucracy, adjusting to a new culture. What I didn't expect was the mountain of paper that would slowly take over my life.
