@@ -3,7 +3,7 @@
 
 title: Keeplys
 description: Digitize, Store, and Organize Your Documents
-url: "https://keeplys.app"
+url: "https://keeplys.com"
 baseurl: ""
 
 # Default language
@@ -60,7 +60,7 @@ defaults:
       lang: "es"
 
 # App Store Links (replace with actual links)
-app_store_url: "https://apps.apple.com/app/keeplys"
+app_store_url: "https://apps.apple.com/us/app/keeplys/id6756133878"
 play_store_url: "https://play.google.com/store/apps/details?id=com.keeplys.app"
 app_id_ios: "id123456789"
 app_id_android: "com.keeplys.app"
