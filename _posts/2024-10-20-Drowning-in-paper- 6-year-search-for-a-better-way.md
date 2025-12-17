@@ -55,7 +55,7 @@ Complaints weren't solving anything. Action could.
 
 ## Searching for a solution and building one
 
-That moment sparked the idea for DigitalKeep—a simple way to finally take control of documents instead of being buried by them.
+That moment sparked the idea for Keeplys—a simple way to finally take control of documents instead of being buried by them.
 
 A place where you can:
 
