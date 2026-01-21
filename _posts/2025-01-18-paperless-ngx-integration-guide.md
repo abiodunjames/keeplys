@@ -5,7 +5,7 @@ date: 2025-01-18
 author: James
 categories: [integration, product]
 permalink: /blog/paperless-ngx-integration-guide/
-image: /assets/images/documents.avif
+image: ../assets/images/paperless/main.jpeg
 
 # SEO Meta
 description: "Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips."
@@ -56,11 +56,10 @@ how_to:
 
 ---
 
-[Keeplys v1.2.0](https://apps.apple.com/us/app/keeplys/id6756133878) has launched. This version comes with a direct integration with paperless-ngx. If you already have paperless-ngx setup as your home document management system, this doc was specifically written for you. 
+>[Keeplys v1.2.0](https://apps.apple.com/us/app/keeplys/id6756133878) has launched. This version comes with a direct integration with paperless-ngx. If you already have paperless-ngx setup as your home document management system, this doc was specifically written for you. 
 
-![](./assets/images/paperless/paperless-inte.jpeg)
 
-## What is Paperless-NGX?
+
 
 [Paperless-NGX](https://docs.paperless-ngx.com) is a self-hosted document management system that transforms your physical documents into a searchable online archive. When combined with Keeplys, you can:
 
@@ -141,7 +140,7 @@ You'll see the configuration screen:
 | ❌ Endpoint not found     | Verify your server URL is correct                              |
 | ❌ Connection failed      | Check your network connection and server status                |
 
-![](./assets/images/paperless/test-connection.jpeg)
+![](/assets/images/paperless/test-connection.jpeg)
 
 
 ### Step 3: Configure Upload Settings
@@ -162,7 +161,7 @@ Choose which documents to upload:
 
 **Example**: Select only your "Receipts" and "Tax Documents" folders to upload business-related scans while keeping personal documents local.
 
-![](./assets/images/paperless/upload-setting.jpeg)
+![](/assets/images/paperless/upload-setting.jpeg)
 
 #### Default Tags
 
@@ -225,7 +224,7 @@ View the status of all uploads:
 | 🔄 Pending   | Waiting to upload (may be offline or queued)          |
 | ❌ Failed     | Upload failed — tap to retry or view error            |
 
-![](./assets/images/paperless/paperless-integration-setting.jpeg)
+![](/assets/images/paperless/paperless-integration-setting.jpeg)
 
 
 ## Configuration Options
