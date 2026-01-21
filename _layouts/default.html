@@ -28,11 +28,19 @@
   {% assign lang_region = site.language_regions[current_lang] | default: current_lang %}
   
   <!-- Primary Meta Tags -->
+  {% if page.layout == 'post' %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="title" content="{{ page.title }} | {{ site.title }}">
+  <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 160 }}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% else %}{{ t.meta.keywords }}{% endif %}">
+  <meta name="author" content="{{ page.author | default: site.organization.name }}">
+  {% else %}
   <title>{{ t.meta.title }}</title>
   <meta name="title" content="{{ t.meta.title }}">
   <meta name="description" content="{{ t.meta.description }}">
   <meta name="keywords" content="{{ t.meta.keywords }}">
   <meta name="author" content="{{ site.organization.name }}">
+  {% endif %}
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
@@ -72,6 +80,22 @@
   <meta http-equiv="content-language" content="{{ lang_region }}">
   
   <!-- Open Graph / Facebook -->
+  {% if page.layout == 'post' %}
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 200 }}">
+  <meta property="og:image" content="{{ page.og_image | default: page.image | prepend: site.url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ page.og_image_alt | default: page.title }}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ page.author }}">
+  {% for keyword in page.keywords %}<meta property="article:tag" content="{{ keyword }}">
+  {% endfor %}
+  {% else %}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
@@ -81,6 +105,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ site.title }} - {{ t.meta.description }}">
+  {% endif %}
   <meta property="og:locale" content="{{ lang_region | replace: '-', '_' }}">
   {% for lang in site.languages %}
     {% if lang != current_lang %}
@@ -93,10 +118,17 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:creator" content="@{{ site.twitter }}">
+  {% if page.layout == 'post' %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 200 }}">
+  <meta name="twitter:image" content="{{ page.og_image | default: page.image | prepend: site.url }}">
+  <meta name="twitter:image:alt" content="{{ page.og_image_alt | default: page.title }}">
+  {% else %}
   <meta name="twitter:title" content="{{ t.meta.title }}">
   <meta name="twitter:description" content="{{ t.meta.description }}">
   <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.png">
   <meta name="twitter:image:alt" content="{{ site.title }} - {{ t.meta.description }}">
+  {% endif %}
   
   <!-- App Links Meta Tags -->
   <meta property="al:ios:app_store_id" content="{{ site.app_id_ios }}">

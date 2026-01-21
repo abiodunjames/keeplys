@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="7YnBBPu2DggmYo9pp2GdPpQWtdiEnzLj4iyVEOVRtW8" />
+
+  
+  <!-- Google Analytics 4 (disabled on localhost) -->
+  
+  <script>
+    if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2BNYKLNR0M';
+      document.head.appendChild(script);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2BNYKLNR0M');
+    }
+  </script>
+  
+  
+  
+  
+  
+  
+  <!-- Primary Meta Tags -->
+  
+  <title>How to Connect Keeplys to Paperless-NGX: Complete Integration Guide | Keeplys</title>
+  <meta name="title" content="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide | Keeplys">
+  <meta name="description" content="Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings...">
+  <meta name="keywords" content="paperless-ngx integration, keeplys paperless, document scanner app, paperless-ngx mobile upload, document management system, scan to paperless, keeplys integration guide, paperless api setup">
+  <meta name="author" content="James">
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://keeplys.com/blog/paperless-ngx-integration-guide/">
+  
+  <!-- Hreflang Tags for International SEO (GEO) -->
+  
+  
+  
+  <link rel="alternate" hreflang="en" href="https://keeplys.com/blog/paperless-ngx-integration-gui">
+  <link rel="alternate" hreflang="de-DE" href="https://keeplys.com/de/blog/paperless-ngx-integration-gui">
+  <link rel="alternate" hreflang="it-IT" href="https://keeplys.com/it/blog/paperless-ngx-integration-gui">
+  <link rel="alternate" hreflang="es-ES" href="https://keeplys.com/es/blog/paperless-ngx-integration-gui">
+  <link rel="alternate" hreflang="x-default" href="https://keeplys.com/blog/paperless-ngx-integration-gui">
+  
+  <!-- Geographic Meta Tags (GEO SEO) -->
+  <meta name="geo.region" content="US">
+  <meta name="geo.placename" content="Global">
+  <meta name="ICBM" content="">
+  <meta name="DC.title" content="Keeplys - Free Document Scanner & Organizer App for iOS & Android">
+  <meta name="DC.creator" content="Keeplys">
+  <meta name="DC.language" content="en">
+  
+  <!-- Content Language -->
+  <meta http-equiv="content-language" content="en">
+  
+  <!-- Open Graph / Facebook -->
+  
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Keeplys">
+  <meta property="og:url" content="https://keeplys.com/blog/paperless-ngx-integration-guide/">
+  <meta property="og:title" content="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide">
+  <meta property="og:description" content="Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips.">
+  <meta property="og:image" content="https://keeplys.com/assets/images/documents.avif">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Keeplys and Paperless-NGX integration showing document scanning workflow">
+  <meta property="article:published_time" content="2025-01-18T00:00:00+01:00">
+  <meta property="article:modified_time" content="2026-01-21T00:00:00+01:00">
+  <meta property="article:author" content="James">
+  <meta property="article:tag" content="paperless-ngx integration">
+  <meta property="article:tag" content="keeplys paperless">
+  <meta property="article:tag" content="document scanner app">
+  <meta property="article:tag" content="paperless-ngx mobile upload">
+  <meta property="article:tag" content="document management system">
+  <meta property="article:tag" content="scan to paperless">
+  <meta property="article:tag" content="keeplys integration guide">
+  <meta property="article:tag" content="paperless api setup">
+  
+  
+  <meta property="og:locale" content="en">
+  
+    
+  
+    
+      
+      <meta property="og:locale:alternate" content="de_DE">
+    
+  
+    
+      
+      <meta property="og:locale:alternate" content="it_IT">
+    
+  
+    
+      
+      <meta property="og:locale:alternate" content="es_ES">
+    
+  
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@keeplys">
+  <meta name="twitter:creator" content="@keeplys">
+  
+  <meta name="twitter:title" content="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide">
+  <meta name="twitter:description" content="Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips.">
+  <meta name="twitter:image" content="https://keeplys.com/assets/images/documents.avif">
+  <meta name="twitter:image:alt" content="Keeplys and Paperless-NGX integration showing document scanning workflow">
+  
+  
+  <!-- App Links Meta Tags -->
+  <meta property="al:ios:app_store_id" content="id123456789">
+  <meta property="al:ios:app_name" content="Keeplys">
+  <meta property="al:ios:url" content="https://apps.apple.com/us/app/keeplys/id6756133878">
+  <meta property="al:android:package" content="com.keeplys.app">
+  <meta property="al:android:app_name" content="Keeplys">
+  <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.keeplys.app">
+  <meta name="apple-itunes-app" content="app-id=123456789">
+  <meta name="google-play-app" content="app-id=com.keeplys.app">
+  
+  <!-- Mobile App Meta -->
+  <meta name="application-name" content="Keeplys">
+  <meta name="apple-mobile-web-app-title" content="Keeplys">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1E40AF">
+  <meta name="msapplication-TileColor" content="#1E40AF">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+  <!-- Fonts - DM Sans & DM Serif Display for modern, clean typography -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Structured Data (JSON-LD) -->
+  
+
+
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://keeplys.com/#organization",
+  "name": "Keeplys",
+  "legalName": "Keeplys Inc.",
+  "url": "https://keeplys.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://keeplys.com/assets/images/logo.png",
+    "width": 512,
+    "height": 512
+  },
+  "email": "hello@keeplys.app",
+  "foundingDate": "2025",
+  "sameAs": [
+    "https://twitter.com/keeplys",
+    "https://github.com/keeplys"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@keeplys.app",
+    "contactType": "customer support",
+    "availableLanguage": ["en","de","it","es"]
+  },
+  "areaServed": ["United States","Germany","Italy","Spain","United Kingdom","Canada","Australia"]
+}
+</script>
+
+<!-- SoftwareApplication Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://keeplys.com/#app",
+  "name": "Keeplys",
+  "description": "Transform paper into digital files instantly. Keeplys is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "iOS, Android",
+  "url": "https://keeplys.com",
+  "image": "https://keeplys.com/assets/images/og-image.png",
+  "screenshot": "https://keeplys.com/assets/images/app-screenshot.png",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://keeplys.com/#organization"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://keeplys.com/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1250",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "downloadUrl": [
+    "https://apps.apple.com/us/app/keeplys/id6756133878",
+    "https://play.google.com/store/apps/details?id=com.keeplys.app"
+  ],
+  "featureList": [
+    "Smart Document Scanning",
+    "Cloud Backup & Sync",
+    "Effortless Organization",
+    "Bank-Level Security",
+    "Instant Sharing",
+    "Works Offline"
+  ],
+  "inLanguage": "en"
+}
+</script>
+
+<!-- WebSite Schema with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://keeplys.com/#website",
+  "name": "Keeplys",
+  "url": "https://keeplys.com",
+  "description": "Transform paper into digital files instantly. Keeplys is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://keeplys.com/#organization"
+  }
+}
+</script>
+
+<!-- WebPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://keeplys.com/blog/paperless-ngx-integration-guide/#webpage",
+  "url": "https://keeplys.com/blog/paperless-ngx-integration-guide/",
+  "name": "Keeplys - Free Document Scanner & Organizer App for iOS & Android",
+  "description": "Transform paper into digital files instantly. Keeplys is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://keeplys.com/#website"
+  },
+  "about": {
+    "@type": "SoftwareApplication",
+    "@id": "https://keeplys.com/#app"
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": "2026-01-21"
+}
+</script>
+
+
+
+
+
+
+<!-- BlogPosting/TechArticle Schema for blog posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://keeplys.com/blog/paperless-ngx-integration-guide/#article",
+  "headline": "How to Connect Keeplys to Paperless-NGX: Complete Integration Guide",
+  "description": "Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings...",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://keeplys.com/assets/images/documents.avif",
+    "width": 1200,
+    "height": 630
+  },
+  "datePublished": "2025-01-18T00:00:00+01:00",
+  "dateModified": "2026-01-21T00:00:00+01:00",
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://keeplys.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://keeplys.com/blog/paperless-ngx-integration-guide/"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://keeplys.com/#website"
+  },
+  "inLanguage": "en",
+  "keywords": "paperless-ngx integration, keeplys paperless, document scanner app, paperless-ngx mobile upload, document management system, scan to paperless, keeplys integration guide, paperless api setup",
+  "timeRequired": "PT8M",
+  "proficiencyLevel": "Beginner",
+  "dependencies": ["Paperless-NGX server (self-hosted or cloud)","Keeplys app v1.2.0+","Network access to Paperless server"]
+}
+</script>
+
+<!-- BreadcrumbList Schema for blog posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://keeplys.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://keeplys.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Connect Keeplys to Paperless-NGX: Complete Integration Guide",
+      "item": "https://keeplys.com/blog/paperless-ngx-integration-guide/"
+    }
+  ]
+}
+</script>
+
+
+<!-- HowTo Schema for step-by-step guides (Rich Snippets) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Connect Keeplys to Paperless-NGX",
+  "description": "Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings...",
+  "image": "https://keeplys.com/assets/images/documents.avif",
+  "totalTime": "PT15M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Get Your Paperless-NGX API Token",
+      "text": "Open Paperless-NGX, go to Settings, navigate to API Tokens, create a new token and copy it."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Open Keeplys Integration Settings",
+      "text": "Open Keeplys app, go to Settings, tap Integrations, then Add Integration, and select Paperless-NGX."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Configure Connection",
+      "text": "Enter your Paperless server URL and paste the API token you created earlier."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Test and Connect",
+      "text": "Tap Test Connection to verify the setup, then tap Connect to complete the integration."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Configure Upload Settings",
+      "text": "Choose which folders to sync and set default tags for uploaded documents."
+    }
+  ]
+}
+</script>
+
+
+
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How to Connect Keeplys to Paperless-NGX: Complete Integration Guide | Keeplys</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide" />
+<meta name="author" content="James" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips." />
+<meta property="og:description" content="Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips." />
+<link rel="canonical" href="https://keeplys.com/blog/paperless-ngx-integration-guide/" />
+<meta property="og:url" content="https://keeplys.com/blog/paperless-ngx-integration-guide/" />
+<meta property="og:site_name" content="Keeplys" />
+<meta property="og:image" content="https://keeplys.com/assets/images/documents.avif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-18T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://keeplys.com/assets/images/documents.avif" />
+<meta property="twitter:title" content="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@James" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"James"},"dateModified":"2026-01-21T00:00:00+01:00","datePublished":"2025-01-18T00:00:00+01:00","description":"Learn how to integrate Keeplys with Paperless-NGX to automatically upload scanned documents. Step-by-step setup guide with API configuration, upload settings, and troubleshooting tips.","headline":"How to Connect Keeplys to Paperless-NGX: Complete Integration Guide","image":"https://keeplys.com/assets/images/documents.avif","mainEntityOfPage":{"@type":"WebPage","@id":"https://keeplys.com/blog/paperless-ngx-integration-guide/"},"url":"https://keeplys.com/blog/paperless-ngx-integration-guide/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  
+
+
+<header class="site-header" role="banner">
+  <nav class="nav-container" role="navigation" aria-label="Main navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <a href="/" class="logo" aria-label="Keeplys - Home" itemprop="url">
+      <img src="/assets/images/favicon.svg" alt="Keeplys logo" class="logo-icon" width="36" height="36" aria-hidden="true">
+      <span class="logo-text" itemprop="name">Keeplys</span>
+    </a>
+    
+    <div class="nav-links" role="menubar">
+      <a href="#features" class="nav-link" role="menuitem" itemprop="url">Features</a>
+      <a href="#how-it-works" class="nav-link" role="menuitem" itemprop="url">How It Works</a>
+      <a href="/blog/" class="nav-link" role="menuitem" itemprop="url">Blog</a>
+      <a href="#download" class="nav-link nav-link-cta" role="menuitem" itemprop="url">Download</a>
+    </div>
+    
+    <div class="nav-actions">
+      <div class="language-switcher">
+        <button class="lang-toggle" aria-label="Select language">
+          <span class="lang-current">EN</span>
+          <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="lang-dropdown">
+          <a href="/" class="lang-option active">English</a>
+          <a href="/de/" class="lang-option ">Deutsch</a>
+          <a href="/it/" class="lang-option ">Italiano</a>
+          <a href="/es/" class="lang-option ">Español</a>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <div class="mobile-menu">
+    <a href="#features" class="mobile-link">Features</a>
+    <a href="#how-it-works" class="mobile-link">How It Works</a>
+    <a href="/blog/" class="mobile-link">Blog</a>
+    <a href="#download" class="mobile-link">Download</a>
+    <div class="mobile-langs">
+      <a href="/" class="mobile-lang active">EN</a>
+      <a href="/de/" class="mobile-lang ">DE</a>
+      <a href="/it/" class="mobile-lang ">IT</a>
+      <a href="/es/" class="mobile-lang ">ES</a>
+    </div>
+  </div>
+</header>
+
+
+  
+  <main>
+    
+
+
+<article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="blog-post-container">
+    <header class="post-header">
+      <a href="/blog/" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to Blog</span>
+      </a>
+      
+      <div class="post-meta">
+        <time datetime="2025-01-18T00:00:00+01:00" itemprop="datePublished">
+          January 18, 2025
+        </time>
+        
+      </div>
+      
+      <h2 class="post-title" itemprop="headline">How to Connect Keeplys to Paperless-NGX: Complete Integration Guide</h2>
+      
+      
+      <div class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">James</span>
+      </div>
+      
+    </header>
+    
+    
+    <figure class="post-featured-image">
+      <img src="/assets/images/documents.avif" alt="How to Connect Keeplys to Paperless-NGX: Complete Integration Guide" itemprop="image">
+    </figure>
+    
+    
+    <div class="post-content" itemprop="articleBody">
+      <p><a href="https://apps.apple.com/us/app/keeplys/id6756133878">Keeplys v1.2.0</a> has launched. This version comes with a direct integration with paperless-ngx. If you already have paperless-ngx setup as your home document management system, this doc was specifically written for you. </p>
+
+<p><img src="./assets/images/paperless/paperless-inte.jpeg" alt="" /></p>
+
+<h2 id="what-is-paperless-ngx">What is Paperless-NGX?</h2>
+
+<p><a href="https://docs.paperless-ngx.com">Paperless-NGX</a> is a self-hosted document management system that transforms your physical documents into a searchable online archive. When combined with Keeplys, you can:</p>
+
+<ul>
+  <li>
+    <p>Scan documents on your phone and automatically upload them to Paperless</p>
+  </li>
+  <li>
+    <p>Organize with tags that sync between both systems</p>
+  </li>
+  <li>
+    <p>Search your documents using Paperless’s powerful OCR and full-text search</p>
+  </li>
+  <li>
+    <p>Access your documents from any device</p>
+  </li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before you begin, make sure you have:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Requirement</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Paperless-NGX instance</td>
+      <td>A running Paperless-NGX server (self-hosted or cloud)</td>
+    </tr>
+    <tr>
+      <td>Network access</td>
+      <td>Your phone must be able to reach your Paperless server</td>
+    </tr>
+    <tr>
+      <td>Admin account</td>
+      <td>Access to create API tokens in Paperless</td>
+    </tr>
+    <tr>
+      <td>Keeplys v1.2.0+</td>
+      <td>The integrations feature requires version 1.2.0 or later</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Note</strong>: If your Paperless server is only accessible on your local network, you’ll need to be connected to that network (or use a VPN) for uploads to work.</p>
+
+<h2 id="setup-guide">Setup Guide</h2>
+
+<h3 id="step-1-get-your-api-token">Step 1: Get Your API Token</h3>
+
+<ol>
+  <li>
+    <p>Open your Paperless-NGX web interface</p>
+  </li>
+  <li>
+    <p>Click your <strong>username</strong> in the top-right corner</p>
+  </li>
+  <li>
+    <p>Select <strong>Settings</strong> from the dropdown menu</p>
+  </li>
+  <li>
+    <p>Navigate to the <strong>API Tokens</strong> section</p>
+  </li>
+  <li>
+    <p>Click <strong>Create Token</strong></p>
+  </li>
+  <li>
+    <p>Give it a name (e.g., “Keeplys Mobile App”)</p>
+  </li>
+  <li>
+    <p>Copy the generated token — you’ll need this in the next step</p>
+  </li>
+</ol>
+
+<p><strong>Security Tip</strong>: API tokens grant full access to your Paperless account. Keep your token secure and never share it.</p>
+
+<h3 id="step-2-connect-keeplys">Step 2: Connect Keeplys</h3>
+
+<ol>
+  <li>
+    <p>Open <strong>Keeplys</strong> on your device</p>
+  </li>
+  <li>
+    <p>Go to <strong>Settings</strong> (gear icon)</p>
+  </li>
+  <li>
+    <p>Tap <strong>Integrations</strong></p>
+  </li>
+  <li>
+    <p>Tap <strong>Add Integration</strong></p>
+  </li>
+  <li>
+    <p>Select <strong>Paperless-NGX</strong> from the list</p>
+  </li>
+</ol>
+
+<p>You’ll see the configuration screen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>What to Enter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Server URL</strong></td>
+      <td>Your Paperless server address (e.g., <code class="language-plaintext highlighter-rouge">https://paperless.yourserver.com</code>)</td>
+    </tr>
+    <tr>
+      <td><strong>API Token</strong></td>
+      <td>The token you created in Step 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>
+    <p>Tap <strong>Test Connection</strong> to verify the setup</p>
+  </li>
+  <li>
+    <p>If successful, tap <strong>Connect</strong></p>
+  </li>
+</ol>
+
+<h4 id="test-connection-results">Test Connection Results</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Result</th>
+      <th>What It Means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>✅ Connected successfully</td>
+      <td>Everything is working! You’ll see your document and tag count.</td>
+    </tr>
+    <tr>
+      <td>❌ Invalid API token</td>
+      <td>Double-check your token was copied correctly</td>
+    </tr>
+    <tr>
+      <td>❌ Endpoint not found</td>
+      <td>Verify your server URL is correct</td>
+    </tr>
+    <tr>
+      <td>❌ Connection failed</td>
+      <td>Check your network connection and server status</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="./assets/images/paperless/test-connection.jpeg" alt="" /></p>
+
+<h3 id="step-3-configure-upload-settings">Step 3: Configure Upload Settings</h3>
+
+<p>After connecting, you can customize how documents are uploaded:</p>
+
+<ol>
+  <li>From the <strong>Integrations</strong> screen, tap <strong>Upload Settings</strong></li>
+</ol>
+
+<h4 id="upload-scope">Upload Scope</h4>
+
+<p>Choose which documents to upload:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All folders</strong></td>
+      <td>Every document you save will be uploaded</td>
+    </tr>
+    <tr>
+      <td><strong>Selected folders only</strong></td>
+      <td>Only documents in specific folders are uploaded</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Example</strong>: Select only your “Receipts” and “Tax Documents” folders to upload business-related scans while keeping personal documents local.</p>
+
+<p><img src="./assets/images/paperless/upload-setting.jpeg" alt="" /></p>
+
+<h4 id="default-tags">Default Tags</h4>
+
+<p>Tags are automatically applied to every uploaded document:</p>
+
+<ul>
+  <li>
+    <p><strong>Add custom tags</strong>: Type a tag name and tap the + button</p>
+  </li>
+  <li>
+    <p><strong>Use existing Paperless tags</strong>: Select from tags already in your Paperless instance</p>
+  </li>
+</ul>
+
+<p><strong>Pro Tip</strong>: Add a “keeplys” or “mobile-scan” tag to easily filter documents uploaded from your phone.</p>
+
+<h2 id="using-the-integration">Using the Integration</h2>
+
+<h3 id="automatic-uploads">Automatic Uploads</h3>
+
+<p>Once configured, uploads happen automatically:</p>
+
+<ol>
+  <li>
+    <p><strong>Scan or import</strong> a document in Keeplys</p>
+  </li>
+  <li>
+    <p><strong>Save</strong> the document to a folder</p>
+  </li>
+  <li>
+    <p>The document <strong>automatically uploads</strong> to Paperless in the background</p>
+  </li>
+</ol>
+
+<p>You’ll see a small sync indicator while the upload is in progress.</p>
+
+<h4 id="what-gets-uploaded">What Gets Uploaded</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Included</th>
+      <th>Not Included</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Document PDF/image file</td>
+      <td>Local-only documents (if folder scope is set)</td>
+    </tr>
+    <tr>
+      <td>Document title</td>
+      <td>Documents from excluded folders</td>
+    </tr>
+    <tr>
+      <td>Default tags</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="manual-uploads">Manual Uploads</h3>
+
+<p>To manually upload a document:</p>
+
+<ol>
+  <li>
+    <p>Open the document in Keeplys</p>
+  </li>
+  <li>
+    <p>Tap the <strong>share</strong> icon (↑)</p>
+  </li>
+  <li>
+    <p>Select <strong>Send to Paperless-NGX</strong></p>
+  </li>
+</ol>
+
+<h3 id="upload-history">Upload History</h3>
+
+<p>View the status of all uploads:</p>
+
+<ol>
+  <li>
+    <p>Go to <strong>Settings</strong> → <strong>Integrations</strong></p>
+  </li>
+  <li>
+    <p>Tap <strong>Upload History</strong></p>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>✅ Completed</td>
+      <td>Document successfully uploaded and processed</td>
+    </tr>
+    <tr>
+      <td>⏳ Processing</td>
+      <td>Upload complete, Paperless is processing the document</td>
+    </tr>
+    <tr>
+      <td>🔄 Pending</td>
+      <td>Waiting to upload (may be offline or queued)</td>
+    </tr>
+    <tr>
+      <td>❌ Failed</td>
+      <td>Upload failed — tap to retry or view error</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="./assets/images/paperless/paperless-integration-setting.jpeg" alt="" /></p>
+
+<h2 id="configuration-options">Configuration Options</h2>
+
+<h3 id="server-url-formats">Server URL Formats</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTTPS (recommended)</td>
+      <td><code class="language-plaintext highlighter-rouge">https://paperless.example.com</code></td>
+    </tr>
+    <tr>
+      <td>HTTP (local only)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://192.168.1.100:8000</code></td>
+    </tr>
+    <tr>
+      <td>With path prefix</td>
+      <td><code class="language-plaintext highlighter-rouge">https://example.com/paperless</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Important</strong>: Always use HTTPS for servers accessible over the internet.</p>
+
+<h3 id="network-requirements">Network Requirements</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Required Setup</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Local server</td>
+      <td>Connect to same WiFi/LAN</td>
+    </tr>
+    <tr>
+      <td>Remote server</td>
+      <td>Public URL or VPN access</td>
+    </tr>
+    <tr>
+      <td>Behind firewall</td>
+      <td>Port forwarding or reverse proxy</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="can-i-use-multiple-paperless-servers">Can I use multiple Paperless servers?</h3>
+
+<p>Not currently. Keeplys supports one integration at a time. Disconnect the current server to connect to a different one.</p>
+
+<h3 id="does-it-work-offline">Does it work offline?</h3>
+
+<p>Uploads are <strong>queued</strong> when offline and automatically sent when you reconnect. Documents are always saved locally first.</p>
+
+<h3 id="are-my-credentials-secure">Are my credentials secure?</h3>
+
+<p>Yes. Your API token is stored in your device’s <strong>secure storage</strong> (Keychain on iOS, Keystore on Android) and is never transmitted except to your Paperless server.</p>
+
+<h3 id="what-file-formats-are-uploaded">What file formats are uploaded?</h3>
+
+<p>Documents are uploaded as <strong>PDF</strong> files. Multi-page scans are combined into a single PDF.</p>
+
+<h3 id="can-i-edit-documents-after-uploading">Can I edit documents after uploading?</h3>
+
+<p>Documents uploaded to Paperless are independent copies. Edits in Keeplys won’t sync to Paperless (and vice versa).</p>
+
+<h3 id="how-do-i-disconnect-the-integration">How do I disconnect the integration?</h3>
+
+<ol>
+  <li>
+    <p>Go to <strong>Settings</strong> → <strong>Integrations</strong></p>
+  </li>
+  <li>
+    <p>Tap your connected Paperless instance</p>
+  </li>
+  <li>
+    <p>Tap <strong>Disconnect</strong></p>
+  </li>
+  <li>
+    <p>Confirm the disconnection</p>
+  </li>
+</ol>
+
+<p>Your local documents are not affected.</p>
+
+<h3 id="what-happens-to-queued-uploads-if-i-disconnect">What happens to queued uploads if I disconnect?</h3>
+
+<p>Pending uploads are <strong>cancelled</strong> when you disconnect. Completed uploads remain in Paperless.</p>
+
+<hr />
+
+<h2 id="getting-help">Getting Help</h2>
+
+<ul>
+  <li>
+    <p><strong>Paperless-NGX Docs</strong>: <a href="https://docs.paperless-ngx.com">docs.paperless-ngx.com</a></p>
+  </li>
+  <li>
+    <p><strong>Paperless Community</strong>: <a href="https://github.com/paperless-ngx/paperless-ngx/discussions">GitHub Discussions</a></p>
+  </li>
+  <li>
+    <p><strong>Keeplys Support</strong>: Contact us through the app’s Settings → Help &amp; Support</p>
+  </li>
+</ul>
+
+<hr />
+
+<p><em>Last updated: January 2026</em></p>
+
+    </div>
+    
+    <footer class="post-footer">
+      <div class="post-share">
+        <span class="share-label">Share this article:</span>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?url=https://keeplys.com/blog/paperless-ngx-integration-guide/&text=How+to+Connect+Keeplys+to+Paperless-NGX%3A+Complete+Integration+Guide" target="_blank" rel="noopener" class="share-btn share-twitter" aria-label="Share on Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://keeplys.com/blog/paperless-ngx-integration-guide/&title=How+to+Connect+Keeplys+to+Paperless-NGX%3A+Complete+Integration+Guide" target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Share on LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:?subject=How+to+Connect+Keeplys+to+Paperless-NGX%3A+Complete+Integration+Guide&body=https://keeplys.com/blog/paperless-ngx-integration-guide/" class="share-btn share-email" aria-label="Share via Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
+      <a href="/blog/" class="read-more-link">
+        Read more articles
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </footer>
+  </div>
+</article>
+
+
+  </main>
+  
+  
+
+
+<footer class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-brand" itemscope itemtype="https://schema.org/Organization">
+        <a href="/" class="footer-logo" aria-label="Keeplys - Home" itemprop="url">
+          <img src="/assets/images/favicon.svg" alt="Keeplys logo" class="logo-icon" width="36" height="36" aria-hidden="true">
+          <span class="logo-text" itemprop="name">Keeplys</span>
+        </a>
+        <p class="footer-tagline" itemprop="description">Digitize your life, one document at a time.</p>
+      </div>
+      
+      <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+        <div class="footer-column">
+          <h4 id="footer-app-heading">App</h4>
+          <ul role="list" aria-labelledby="footer-app-heading">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="/changelog">Changelog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 id="footer-legal-heading">Legal</h4>
+          <ul role="list" aria-labelledby="footer-legal-heading">
+            <li><a href="/privacy" rel="privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms" rel="terms-of-service">Terms of Service</a></li>
+            <li><a href="/delete-account">Delete Account</a></li>
+            <li><a href="mailto:hello@keeplys.app" itemprop="email">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 id="footer-lang-heading">Languages</h4>
+          <ul role="list" aria-labelledby="footer-lang-heading">
+            <li><a href="/" hreflang="en" lang="en">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+            <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright"><small>© 2025 Keeplys. All rights reserved.</small></p>
+      <p class="made-with"><small>Made with <span class="heart" aria-label="love">♥</span> for everyone</small></p>
+    </div>
+  </div>
+  
+  <div class="footer-glow" aria-hidden="true"></div>
+</footer>
+
+
+  
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
+
