@@ -1,0 +1,142 @@
+---
+layout: default
+lang: en
+title: Join the Beta Program
+permalink: /beta/
+description: "Be among the first to test new Keeplys features. Join our beta program and help shape the future of document scanning."
+---
+
+<section class="beta-page">
+  <div class="beta-container">
+    <div class="beta-content">
+      <div class="beta-badge">
+        <i class="fa-solid fa-flask"></i>
+        <span>Beta Program</span>
+      </div>
+      
+      <h1 class="beta-headline">
+        Help Shape the <span class="text-gradient">Future</span> of Keeplys
+      </h1>
+      
+      <p class="beta-description">
+        Get early access to new features, provide feedback, and be part of our journey. 
+        Beta testers get exclusive access to experimental features before anyone else.
+      </p>
+      
+      <div class="beta-perks">
+        <div class="perk-item">
+          <i class="fa-solid fa-rocket"></i>
+          <span>Early access to new features</span>
+        </div>
+        <div class="perk-item">
+          <i class="fa-solid fa-comments"></i>
+          <span>Direct line to the dev team</span>
+        </div>
+        <div class="perk-item">
+          <i class="fa-solid fa-gift"></i>
+          <span>Exclusive beta-only perks</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="beta-form-wrapper">
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Join the Beta</h2>
+          <p>Fill out the form below and we'll be in touch</p>
+        </div>
+        
+        <!-- 
+          GOOGLE FORMS INTEGRATION:
+          To connect this form to Google Forms:
+          1. Open your Google Form in edit mode
+          2. Click the 3-dot menu → Get pre-filled link
+          3. Fill in dummy data and click "Get link"
+          4. The URL will contain entry.XXXXXXX for each field
+          5. Replace the entry.XXXXXXX values below with your form's entry IDs
+          6. Replace YOUR_FORM_ID in the action URL with your form ID
+        -->
+        <form 
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdSG-dG4Dk1gJF0lZG7jrz_NonDyZ4fOSjsIItO1CfuOCQIGQ/formResponse" 
+          method="POST" 
+          target="hidden_iframe"
+          class="beta-form"
+          id="beta-signup-form"
+        >
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="entry.1720601849" 
+              placeholder="John Doe"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="entry.909874244" 
+              placeholder="you@example.com" 
+              required
+            >
+          </div>
+          
+          <div class="form-group form-group-checkbox">
+            <label class="checkbox-label">
+              <input 
+                type="checkbox" 
+                id="consent" 
+                name="entry.1624035067"
+                value="I acknowledge"
+                required
+              >
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">I understand that my information will only be used for beta testing and communication related to Keeplys.</span>
+            </label>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <span>Join the Beta</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        
+        <!-- Hidden iframe for form submission without redirect -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        
+        <!-- Success message (shown after submission) -->
+        <div class="form-success" id="form-success" style="display:none;">
+          <div class="success-icon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3>You're on the list!</h3>
+          <p>Thanks for signing up. We'll be in touch soon with beta access details.</p>
+        </div>
+        
+        <script>
+          document.getElementById('beta-signup-form').addEventListener('submit', function() {
+            // Show success message after short delay
+            setTimeout(function() {
+              document.getElementById('beta-signup-form').style.display = 'none';
+              document.getElementById('form-success').style.display = 'block';
+            }, 500);
+          });
+        </script>
+        
+        <div class="form-footer">
+          <p><i class="fa-solid fa-shield-halved"></i> We respect your privacy. No spam, ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="beta-bg-elements" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-grid"></div>
+  </div>
+</section>
