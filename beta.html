@@ -1,40 +1,40 @@
 ---
 layout: default
 lang: en
-title: Join the Beta Program
+title: Join the Android Beta
 permalink: /beta/
-description: "Be among the first to test new Keeplys features. Join our beta program and help shape the future of document scanning."
+description: "Be among the first to test Keeplys on Android. Join our beta program and help us build the best document scanning app."
 ---
 
 <section class="beta-page">
   <div class="beta-container">
     <div class="beta-content">
-      <div class="beta-badge">
-        <i class="fa-solid fa-flask"></i>
-        <span>Beta Program</span>
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span class="badge-text">Android Beta</span>
       </div>
       
-      <h1 class="beta-headline">
-        Help Shape the <span class="text-gradient">Future</span> of Keeplys
+      <h1 class="hero-headline">
+        Be First to <span class="headline-accent">Experience</span> Keeplys on Android
       </h1>
       
-      <p class="beta-description">
-        Get early access to new features, provide feedback, and be part of our journey. 
-        Beta testers get exclusive access to experimental features before anyone else.
+      <p class="hero-description">
+        We're bringing Keeplys to Android! Sign up for early access and help us shape 
+        the app before launch. Beta testers get exclusive features and direct access to our team.
       </p>
       
       <div class="beta-perks">
         <div class="perk-item">
-          <i class="fa-solid fa-rocket"></i>
-          <span>Early access to new features</span>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <span>Early Android access</span>
         </div>
         <div class="perk-item">
-          <i class="fa-solid fa-comments"></i>
-          <span>Direct line to the dev team</span>
+          <i class="fa-solid fa-bug"></i>
+          <span>Report bugs, shape the app</span>
         </div>
         <div class="perk-item">
           <i class="fa-solid fa-gift"></i>
-          <span>Exclusive beta-only perks</span>
+          <span>Free premium features at launch</span>
         </div>
       </div>
     </div>
@@ -42,20 +42,13 @@ description: "Be among the first to test new Keeplys features. Join our beta pro
     <div class="beta-form-wrapper">
       <div class="form-card">
         <div class="form-header">
-          <h2>Join the Beta</h2>
-          <p>Fill out the form below and we'll be in touch</p>
+          <div class="form-icon">
+            <i class="fa-brands fa-android"></i>
+          </div>
+          <h2>Join the Waitlist</h2>
+          <p>Get notified when Android beta is ready</p>
         </div>
         
-        <!-- 
-          GOOGLE FORMS INTEGRATION:
-          To connect this form to Google Forms:
-          1. Open your Google Form in edit mode
-          2. Click the 3-dot menu → Get pre-filled link
-          3. Fill in dummy data and click "Get link"
-          4. The URL will contain entry.XXXXXXX for each field
-          5. Replace the entry.XXXXXXX values below with your form's entry IDs
-          6. Replace YOUR_FORM_ID in the action URL with your form ID
-        -->
         <form 
           action="https://docs.google.com/forms/d/e/1FAIpQLSdSG-dG4Dk1gJF0lZG7jrz_NonDyZ4fOSjsIItO1CfuOCQIGQ/formResponse" 
           method="POST" 
@@ -100,26 +93,23 @@ description: "Be among the first to test new Keeplys features. Join our beta pro
           </div>
           
           <button type="submit" class="submit-btn">
-            <span>Join the Beta</span>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-brands fa-android"></i>
+            <span>Join Android Beta</span>
           </button>
         </form>
         
-        <!-- Hidden iframe for form submission without redirect -->
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         
-        <!-- Success message (shown after submission) -->
         <div class="form-success" id="form-success" style="display:none;">
           <div class="success-icon">
             <i class="fa-solid fa-circle-check"></i>
           </div>
           <h3>You're on the list!</h3>
-          <p>Thanks for signing up. We'll be in touch soon with beta access details.</p>
+          <p>We'll email you as soon as the Android beta is ready. Thanks for your interest!</p>
         </div>
         
         <script>
           document.getElementById('beta-signup-form').addEventListener('submit', function() {
-            // Show success message after short delay
             setTimeout(function() {
               document.getElementById('beta-signup-form').style.display = 'none';
               document.getElementById('form-success').style.display = 'block';
@@ -134,9 +124,7 @@ description: "Be among the first to test new Keeplys features. Join our beta pro
     </div>
   </div>
   
-  <div class="beta-bg-elements" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-grid"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-pattern"></div>
   </div>
 </section>

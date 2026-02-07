@@ -1887,7 +1887,6 @@ button {
   min-height: 100vh;
   padding: var(--space-6xl) 0;
   overflow: hidden;
-  background: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 50%, #FDF4FF 100%);
 }
 
 .beta-container {
@@ -1916,55 +1915,6 @@ button {
 @media (min-width: 900px) {
   .beta-content {
     text-align: left;
-  }
-}
-
-.beta-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-sm) var(--space-base);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
-  border: 1px solid rgba(139, 92, 246, 0.3);
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #7C3AED;
-  margin-bottom: var(--space-xl);
-}
-
-.beta-badge i {
-  font-size: 0.9rem;
-}
-
-.beta-headline {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 700;
-  line-height: 1.15;
-  color: var(--color-gray-900);
-  margin-bottom: var(--space-xl);
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.beta-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-2xl);
-  max-width: 500px;
-}
-
-@media (min-width: 900px) {
-  .beta-description {
-    margin-left: 0;
-    margin-right: auto;
   }
 }
 
@@ -2000,7 +1950,7 @@ button {
 }
 
 .perk-item i {
-  color: #8B5CF6;
+  color: var(--color-primary);
   font-size: 1rem;
 }
 
@@ -2015,10 +1965,8 @@ button {
   max-width: 480px;
   background: var(--color-white);
   border-radius: var(--radius-2xl);
-  box-shadow: 
-    0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 20px 25px -5px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -2026,7 +1974,22 @@ button {
   padding: var(--space-2xl) var(--space-2xl) var(--space-lg);
   text-align: center;
   border-bottom: 1px solid var(--color-border-light);
-  background: linear-gradient(180deg, #FAFBFC 0%, transparent 100%);
+}
+
+.form-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-base);
+  background: var(--color-primary);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-icon i {
+  font-size: 1.5rem;
+  color: white;
 }
 
 .form-header h2 {
@@ -2041,19 +2004,7 @@ button {
   color: var(--color-text-muted);
 }
 
-/* Google Form Embed */
-.google-form-embed {
-  min-height: 500px;
-  background: var(--color-white);
-}
-
-.google-form-embed iframe {
-  display: block;
-  border: none;
-  background: var(--color-white);
-}
-
-/* Custom Form Styles (if using alternative) */
+/* Form Styles */
 .beta-form {
   padding: var(--space-2xl);
 }
@@ -2088,19 +2039,14 @@ button {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #8B5CF6;
+  border-color: var(--color-primary);
   background: var(--color-white);
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+  box-shadow: 0 0 0 3px var(--color-primary-subtle);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: var(--color-text-muted);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 80px;
 }
 
 /* Checkbox Styling */
@@ -2148,8 +2094,8 @@ button {
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
-  border-color: #7C3AED;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
@@ -2157,7 +2103,7 @@ button {
 }
 
 .checkbox-label input[type="checkbox"]:focus + .checkbox-custom {
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 0 3px var(--color-primary-subtle);
 }
 
 .checkbox-text {
@@ -2172,10 +2118,10 @@ button {
 }
 
 .success-icon {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   margin: 0 auto var(--space-xl);
-  background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(16, 185, 129, 0.15));
+  background: var(--color-primary-subtle);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2183,7 +2129,7 @@ button {
 }
 
 .success-icon i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-success);
 }
 
@@ -2211,26 +2157,20 @@ button {
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-white);
-  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+  background: var(--color-primary);
   border: none;
   border-radius: var(--radius-lg);
   cursor: pointer;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
 }
 
 .submit-btn:hover {
-  background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
 }
 
 .submit-btn i {
-  transition: transform var(--transition-base);
-}
-
-.submit-btn:hover i {
-  transform: translateX(4px);
+  font-size: 1.1rem;
 }
 
 .form-footer {
@@ -2249,44 +2189,4 @@ button {
 
 .form-footer i {
   color: var(--color-success);
-}
-
-/* Background Elements */
-.beta-bg-elements {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.bg-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.5;
-}
-
-.bg-blob-1 {
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.2));
-  top: -200px;
-  right: -150px;
-}
-
-.bg-blob-2 {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(139, 92, 246, 0.15));
-  bottom: -150px;
-  left: -100px;
-}
-
-.bg-grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
 }
