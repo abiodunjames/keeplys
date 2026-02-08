@@ -13,62 +13,62 @@ nav:
 
 # Hero Section
 hero:
-  tagline: "Your Documents. Digitized. Organized. Secure."
-  headline: "Scan, Store & Share Documents with Ease"
-  description: "Transform paper chaos into digital clarity. Keeplys lets you capture, organize, and access your important documents anywhere, anytime."
+  tagline: "Your Documents. Your Storage. Your Privacy."
+  headline: "Scan Documents, Store Anywhere You Choose"
+  description: "You decide where your documents live. Connect to Nextcloud, Paperless-NGX, iCloud, Google Drive, or keep them local. Full privacy, zero lock-in."
   cta_ios: "Download on the App Store"
   cta_android: "Get it on Google Play"
-  or_text: "Available on iOS and Android"
+  or_text: "Privacy-first scanning"
 
 # Features Section
 features:
-  title: "Everything You Need to Go Paperless"
-  subtitle: "Powerful features designed for simplicity"
+  title: "Your Documents, Your Rules"
+  subtitle: "Connect to the storage you trust. No vendor lock-in, complete privacy."
   items:
-    - icon: "📷"
-      title: "Smart Document Scanning"
-      description: "Capture documents instantly with automatic edge detection and image enhancement. Scans complete in under 30 seconds."
-    - icon: "☁️"
-      title: "Cloud Backup & Sync"
-      description: "Securely backup to iCloud or Google Drive. Access your documents across all your devices, anywhere in the world."
-    - icon: "📁"
-      title: "Effortless Organization"
-      description: "Organize documents into folders with smart auto-naming. Find any document in under 10 seconds."
     - icon: "🔐"
-      title: "Bank-Level Security"
-      description: "Your documents are encrypted and stored securely. Sign in with Apple or Google for seamless authentication."
-    - icon: "📤"
-      title: "Instant Sharing"
-      description: "Share documents via email or your favorite apps with a single tap. Maintain original quality every time."
+      title: "Privacy First"
+      description: "Your documents never touch our servers. Choose where they're stored—your cloud, your server, your device. We don't see your data."
+    - icon: "☁️"
+      title: "Nextcloud Integration"
+      description: "Connect to your self-hosted Nextcloud instance. Full control over your data with automatic sync to your private cloud."
+    - icon: "📋"
+      title: "Paperless-NGX"
+      description: "Seamlessly upload scans to Paperless-NGX. Automatic tagging, OCR, and organization in your document management system."
+    - icon: "📁"
+      title: "Folder Organization"
+      description: "Create custom folder structures. Organize documents your way with smart auto-naming and nested categories."
+    - icon: "🍎"
+      title: "iCloud & Google Drive"
+      description: "Prefer mainstream cloud? Sync to iCloud or Google Drive. Your choice, always accessible across all your devices."
     - icon: "📱"
-      title: "Works Offline"
-      description: "Access your recently viewed documents without an internet connection. Sync happens automatically when you're back online."
+      title: "Local Storage"
+      description: "Keep documents entirely on-device. No internet required, no cloud exposure. True offline-first experience."
 
 # How It Works Section
 how_it_works:
   title: "Get Started in Minutes"
-  subtitle: "Three simple steps to digital document freedom"
+  subtitle: "Three simple steps to private document management"
   steps:
     - number: "1"
       title: "Scan or Upload"
       description: "Use your camera to capture documents or upload existing photos and PDFs from your device."
     - number: "2"
-      title: "Organize Automatically"
-      description: "Documents are enhanced, named with dates, and sorted into folders. Zero effort required."
+      title: "Choose Your Storage"
+      description: "Connect to Nextcloud, Paperless-NGX, iCloud, Google Drive, or keep documents local. You decide."
     - number: "3"
-      title: "Access Anywhere"
-      description: "Enable cloud sync and access your documents from any device, anytime."
+      title: "Organize & Access"
+      description: "Create folders, add tags, and access your documents from anywhere—on your terms."
 
 # Download Section
 download:
-  title: "Ready to Go Paperless?"
-  subtitle: "Download Keeplys free today and take control of your documents."
+  title: "Take Control of Your Documents"
+  subtitle: "Download Keeplys free. Your documents stay yours—always."
   cta_ios: "Download for iPhone"
   cta_android: "Download for Android"
 
 # Footer
 footer:
-  tagline: "Digitize your life, one document at a time."
+  tagline: "Your documents, your storage, your privacy."
   privacy: "Privacy Policy"
   terms: "Terms of Service"
   delete_account: "Delete Account"
@@ -80,14 +80,14 @@ footer:
 
 # Meta (SEO Optimized)
 meta:
-  title: "Keeplys - Free Document Scanner & Organizer App for iOS & Android"
-  description: "Transform paper into digital files instantly. Keeplys is a free document scanner app with smart edge detection, cloud backup to iCloud & Google Drive, and offline access. Download now for iPhone and Android."
-  keywords: "document scanner app, PDF scanner, mobile document scanner, scan documents with phone, paperless office, document organizer app, cloud document storage, iCloud document backup, Google Drive scanner, free scanner app, best document scanner 2025, scan receipts, digitize documents, document management app, OCR scanner"
+  title: "Keeplys - Privacy-First Document Scanner | Nextcloud, Paperless-NGX, iCloud"
+  description: "Scan documents and store them where YOU choose. Connect to Nextcloud, Paperless-NGX, iCloud, or Google Drive. No vendor lock-in, complete privacy. Free for iOS & Android."
+  keywords: "privacy document scanner, Nextcloud document scanner, Paperless-NGX mobile app, self-hosted document scanner, private cloud scanner, document scanner app, PDF scanner, iCloud document backup, Google Drive scanner, open source scanner, document management app, OCR scanner, paperless office"
   # Extended SEO metadata
-  og_title: "Keeplys - Scan, Store & Organize Documents Free"
-  og_description: "The smartest way to go paperless. Scan documents in seconds with automatic edge detection. Sync across all devices with iCloud or Google Drive."
-  twitter_title: "Keeplys - Your Documents, Digitized"
-  twitter_description: "Free document scanner app with smart scanning, cloud sync, and offline access. Available on iOS & Android."
+  og_title: "Keeplys - Your Documents, Your Storage, Your Privacy"
+  og_description: "The only document scanner that lets YOU choose where files are stored. Nextcloud, Paperless-NGX, iCloud, Google Drive, or local. Zero lock-in."
+  twitter_title: "Keeplys - Privacy-First Document Scanner"
+  twitter_description: "Scan documents and store them anywhere you choose. Nextcloud, Paperless-NGX, iCloud, or local. Free for iOS & Android."
 
 # Changelog Section
 changelog:
@@ -105,4 +105,3 @@ blog:
   share: "Share this article"
   more_articles: "Read more articles"
   no_posts: "No posts yet. Check back soon!"
-

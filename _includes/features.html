@@ -13,17 +13,17 @@
       <article class="feature-card" role="listitem" data-delay="{{ forloop.index | minus: 1 | times: 100 }}" itemscope itemtype="https://schema.org/ItemList">
         <div class="feature-icon-wrapper" aria-hidden="true">
           {% if forloop.index == 1 %}
-          <i class="fa-regular fa-image feature-icon"></i>
+          <i class="fa-solid fa-shield-halved feature-icon"></i>
           {% elsif forloop.index == 2 %}
-          <i class="fa-regular fa-hard-drive feature-icon"></i>
+          <i class="fa-solid fa-cloud-arrow-up feature-icon"></i>
           {% elsif forloop.index == 3 %}
-          <i class="fa-regular fa-folder-open feature-icon"></i>
+          <i class="fa-solid fa-file-import feature-icon"></i>
           {% elsif forloop.index == 4 %}
-          <i class="fa-regular fa-id-badge feature-icon"></i>
+          <i class="fa-solid fa-folder-tree feature-icon"></i>
           {% elsif forloop.index == 5 %}
-          <i class="fa-regular fa-paper-plane feature-icon"></i>
+          <i class="fa-brands fa-apple feature-icon"></i>
           {% else %}
-          <i class="fa-regular fa-bookmark feature-icon"></i>
+          <i class="fa-solid fa-mobile-screen feature-icon"></i>
           {% endif %}
         </div>
         <h3 class="feature-title" itemprop="name">{{ feature.title }}</h3>
